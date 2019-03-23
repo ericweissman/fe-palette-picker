@@ -4,12 +4,13 @@ export const projectsReducer = (state = [], action) => {
       return action.projects
     case 'ADD_PROJECT_SUCCESS':
       return [...state, action.project]
+    case 'DELETE_PROJECT_SUCCESS':
+      return state.filter(project => project.id !== action.projectID)
     default:
       return state
   }
 } 
 
-//addprojectsuccess
 
 //editprojectsuccess
 
