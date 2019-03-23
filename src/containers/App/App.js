@@ -4,6 +4,7 @@ import { getProjects } from '../../thunks/getProjects'
 import { addProject } from '../../thunks/addProject'
 import { deleteProject } from '../../thunks/deleteProject'
 import { getPalettes } from '../../thunks/getPalettes'
+import Generator from '../Generator/Generator'
 import PropTypes from 'prop-types';
 import '../../main.scss';
 
@@ -49,7 +50,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Palette Picker</h1>
+        <Generator />
         <form>
           <input onChange={this.handleChange} placeholder='new-project-name' name='projectName' value={this.state.projectName}></input>
           <button onClick={this.handleClick}>Save</button>
