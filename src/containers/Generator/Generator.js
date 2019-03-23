@@ -32,11 +32,28 @@ class Generator extends Component {
       palette.push(this.createColor())
     }
     this.setState({
-      palette
+      palette,
+      color1: palette[0],
+      color2: palette[1],
+      color3: palette[2],
+      color4: palette[3],
+      color5: palette[4]
     })
   }
 
-
+  handleClick = (e) => {
+    const { value } = e.target
+    const { locked } = this.state
+    let edited = [...locked]
+    if(edited.includes(parseInt(value))) {
+      edited = edited.filter(index => index !== parseInt(value))
+    } else {
+      edited.push(parseInt(value))
+    }
+    this.setState({
+      locked: edited,
+    })
+  }
 
   render() {
 
@@ -46,23 +63,23 @@ class Generator extends Component {
         <div className='palette-main'>
         <div>
             <div style={{ backgroundColor: this.state.palette[0]}} className='color-individual'></div>
-          <button>Lock</button>
+            <button onClick={this.handleClick} value={0}>Lock</button>
         </div>
         <div>
             <div style={{ backgroundColor: this.state.palette[1] }} className='color-individual'></div>
-          <button>Lock</button>
+            <button onClick={this.handleClick} value={1}>Lock</button>
         </div>
         <div>
             <div style={{ backgroundColor: this.state.palette[2] }} className='color-individual'></div>
-          <button>Lock</button>
+            <button onClick={this.handleClick} value={2}>Lock</button>
         </div>
         <div>
             <div style={{ backgroundColor: this.state.palette[3] }} className='color-individual'></div>
-          <button>Lock</button>
+            <button onClick={this.handleClick} value={3}>Lock</button>
         </div>
         <div>
             <div style={{ backgroundColor: this.state.palette[4] }}  className='color-individual'></div>
-          <button>Lock</button>
+            <button onClick={this.handleClick} value={4}>Lock</button>
         </div>
         </div>
         <button onClick={this.generatePalette}>Generate Palette</button>
