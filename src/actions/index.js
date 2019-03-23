@@ -1,5 +1,3 @@
-//actions to add
-
 export const isLoading = (bool) => ({
   type: 'IS_LOADING',
   isLoading: bool
@@ -8,4 +6,10 @@ export const isLoading = (bool) => ({
 export const hasErrored = (message) => ({
   type: 'HAS_ERRORED',
   message
+});
+
+//projects
+export const getProjectsSuccess = (projects) => ({
+  type: 'GET_PROJECTS_SUCCESS',
+  projects
 })
