@@ -13,3 +13,8 @@ export const getProjectsSuccess = (projects) => ({
   type: 'GET_PROJECTS_SUCCESS',
   projects
 })
+
+export const addProjectSuccess = (project) => ({
+  type: 'ADD_PROJECT_SUCCESS',
+  project
+})
