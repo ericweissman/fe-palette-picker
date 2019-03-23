@@ -18,3 +18,8 @@ export const addProjectSuccess = (project) => ({
   type: 'ADD_PROJECT_SUCCESS',
   project
 })
+
+export const deleteProjectSuccess = (projectID) => ({
+  type: "DELETE_PROJECT_SUCCESS",
+  projectID
+})
