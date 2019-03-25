@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { getPalettes } from '../../thunks/getPalettes'
+import ProjectCard from '../ProjectCard/ProjectCard'
 
 class ProjectsDisplay extends Component {
 
@@ -11,7 +12,7 @@ class ProjectsDisplay extends Component {
       <div className="projects-container">
         {
           projects && projects.map(project => {
-            return <h3 key={project.id} className="projects">{project.project_name}</h3>
+            return <ProjectCard key={project.id} project={project} />
           })
         }
       </div>
