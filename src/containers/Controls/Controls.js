@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { deleteProject } from '../../thunks/deleteProject'
 import { getPalettes } from '../../thunks/getPalettes'
+import AddPalette from '../AddPalette/AddPalette'
 import CreateProject from '../CreateProject/CreateProject'
 import PropTypes from 'prop-types'
 
@@ -21,8 +22,12 @@ class Controls extends Component {
 
   render() {
     return (
-      <div className="controls">
-        <CreateProject />
+      <div>
+        <div className="controls">
+          <CreateProject />
+          <AddPalette />
+        </div>
+        
         <div>
           <h3>these are temporary</h3>
           <button onClick={this.delete}>Delete</button>
