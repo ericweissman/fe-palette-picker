@@ -1,6 +1,6 @@
 import { isLoading, hasErrored, getPalettesSuccess } from '../actions'
 
-export const getPalettes = (url) => {
+export const getPalettes = (url, id) => {
   return async (dispatch) => {
     try {
       dispatch(isLoading(true))
@@ -10,7 +10,7 @@ export const getPalettes = (url) => {
       }
       dispatch(isLoading(false))
       const result = await response.json()
-      dispatch(getPalettesSuccess(result))
+      dispatch(getPalettesSuccess(result, id))
     } catch (error) {
       dispatch(hasErrored(error.message))
     }
