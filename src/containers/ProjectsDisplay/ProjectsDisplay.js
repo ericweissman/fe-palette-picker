@@ -6,7 +6,7 @@ class ProjectsDisplay extends Component {
 
   render() {
     const { projects } = this.props
-    console.log(this.props.palettes)
+    
     return (
       <div className="projects-container">
         {
