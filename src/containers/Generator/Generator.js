@@ -13,9 +13,11 @@ class Generator extends Component {
   }
 
   componentDidMount() {
-    this.generatePalette()
+    if (!this.props.activePalette.length) {
+      this.generatePalette()
+    }
   }
-  
+
   createColor = () => {
     const options = '0123456789ABCDEF'
     let hexArray = ['#']
@@ -28,7 +30,7 @@ class Generator extends Component {
 
   generatePalette = () => {
     const { locked } = this.state
-    const {activePalette} = this.props
+    const { activePalette } = this.props
     let palette = []
     for (let i = 0; i < 5; i++) {
       let color = ''
@@ -69,7 +71,7 @@ class Generator extends Component {
           {
             activePalette.map((palette, i) => {
               return (
-                <div key={i}style={{ backgroundColor: palette }} className='color-individual'>
+                <div key={i} style={{ backgroundColor: palette }} className='color-individual'>
                   <button onClick={this.handleClick} value={i}>Lock</button>
                   <h4>{palette}</h4>
                 </div>
