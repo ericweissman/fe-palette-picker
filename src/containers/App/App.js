@@ -1,12 +1,14 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import Loading from '../../components/Loading/Loading'
+import ProjectsDisplay from '../../containers/ProjectsDisplay/ProjectsDisplay'
 import { getProjects } from '../../thunks/getProjects'
 import { addProject } from '../../thunks/addProject'
 import { deleteProject } from '../../thunks/deleteProject'
 import { getPalettes } from '../../thunks/getPalettes'
 import Generator from '../Generator/Generator'
-import PropTypes from 'prop-types';
-import '../../main.scss';
+import PropTypes from 'prop-types'
+import '../../main.scss'
 
 class App extends Component {
   constructor() {
@@ -20,7 +22,7 @@ class App extends Component {
     const url = process.env.REACT_APP_BACKEND_URL + '/api/v1/projects'
     this.props.getProjects(url)
   }
-  
+
   handleClick = (e) => {
     e.preventDefault();
     const url = process.env.REACT_APP_BACKEND_URL + '/api/v1/projects'
@@ -28,11 +30,10 @@ class App extends Component {
   }
 
   handleChange = (e) => {
-    const {name, value} = e.target
+    const { name, value } = e.target
     this.setState({
       [name]: value
     })
-    console.log(this.props.projects[this.props.projects.length - 1])
   }
 
   delete = () => {
@@ -48,19 +49,26 @@ class App extends Component {
   }
 
   render() {
-    return (
-      <div className="App">
-        <Generator />
-        <form>
-          <input onChange={this.handleChange} placeholder='new-project-name' name='projectName' value={this.state.projectName}></input>
-          <button onClick={this.handleClick}>Save</button>
-        </form>
+    const { isLoading } = this.props
+
+    if (isLoading) {
+      return <Loading />
+    } else {
+      return (
         <div>
-          <button onClick={this.delete}>Delete</button>
-          <button onClick={this.getPalettes}>Palettes</button>
+          <Generator />
+          <form>
+            <input onChange={this.handleChange} placeholder='new-project-name' name='projectName' value={this.state.projectName}></input>
+            <button onClick={this.handleClick}>Save</button>
+          </form>
+          <div>
+            <button onClick={this.delete}>Delete</button>
+            <button onClick={this.getPalettes}>Palettes</button>
+          </div>
+          <ProjectsDisplay />
         </div>
-      </div>
-    );
+      );
+    }
   }
 }
 
