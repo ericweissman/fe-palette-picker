@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { getPalettes } from '../../thunks/getPalettes'
+import { handlePalette } from '../../thunks/handlePalette';
 import ProjectCard from '../ProjectCard/ProjectCard'
 
 class ProjectsDisplay extends Component {
@@ -26,7 +26,7 @@ export const mapStateToProps = (state) => ({
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  getPalettes: (url) => dispatch(getPalettes(url)),
+  handlePalette: (url, actionToDispatch, method, palette) => dispatch(handlePalette(url, actionToDispatch, method, palette)),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProjectsDisplay);

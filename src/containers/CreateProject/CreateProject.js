@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { addProject } from '../../thunks/addProject'
+import { handleProject } from '../../thunks/handleProject'
+import { addProjectSuccess } from '../../actions'
 
 class CreateProject extends Component {
   state = {
@@ -14,8 +15,10 @@ class CreateProject extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
+    const { handleProject } = this.props
+    const project = { project_name: this.state.projectName }
     const url = process.env.REACT_APP_BACKEND_URL + '/api/v1/projects'
-    this.props.addProject(url, this.state.projectName)
+    handleProject(url, addProjectSuccess, 'POST', project)
   }
 
   render() {
@@ -39,7 +42,7 @@ class CreateProject extends Component {
 }
 
 export const mapDispatchToProps = (dispatch) => ({
-  addProject: (url, project) => dispatch(addProject(url, project))
+  handleProject: (url, actionToDispatch, method, project) => dispatch(handleProject(url, actionToDispatch, method, project))
 })
 
 export default connect(null, mapDispatchToProps)(CreateProject)

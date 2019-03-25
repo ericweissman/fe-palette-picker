@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { getProjects } from '../../thunks/getProjects'
-import { addPalette } from '../../thunks/addPalette'
+import { handlePalette } from '../../thunks/handlePalette';
+import { addPaletteSuccess } from '../../actions'
 import PropTypes from 'prop-types'
 
 class AddPalette extends Component {
@@ -28,7 +28,7 @@ class AddPalette extends Component {
       color_4: activePalette[3],
       color_5: activePalette[4],
     }
-    this.props.addPalette(url, newPalette)
+    this.props.handlePalette(url, addPaletteSuccess, "POST", newPalette)
   }
 
   render() {
@@ -70,8 +70,7 @@ export const mapStateToProps = (state) => ({
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-  getProjects: (url) => dispatch(getProjects(url)),
-  addPalette: (url, palette) => dispatch(addPalette(url, palette)),
+  handlePalette: (url, actionToDispatch, method, palette) => dispatch(handlePalette(url, actionToDispatch, method, palette)),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(AddPalette)

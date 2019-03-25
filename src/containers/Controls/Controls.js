@@ -1,23 +1,26 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { deleteProject } from '../../thunks/deleteProject'
-import { getPalettes } from '../../thunks/getPalettes'
+import { handleProject } from '../../thunks/handleProject'
+import { handlePalette } from '../../thunks/handlePalette'
 import AddPalette from '../AddPalette/AddPalette'
 import CreateProject from '../CreateProject/CreateProject'
+import { deleteProjectSuccess } from '../../actions'
+import { getPalettesSuccess } from '../../actions'
 import PropTypes from 'prop-types'
 
 class Controls extends Component {
 
   delete = () => {
     const id = this.props.projects[this.props.projects.length - 1].id
+    const project = { id }
     const url = process.env.REACT_APP_BACKEND_URL + `/api/v1/projects/${id}`
-    this.props.deleteProject(url, id)
+    this.props.handleProject(url, deleteProjectSuccess, 'DELETE', project)
   }
 
   getPalettes = () => {
     const id = this.props.projects[0].id
     const url = process.env.REACT_APP_BACKEND_URL + `/api/v1/projects/${id}/palettes`
-    this.props.getPalettes(url)
+    this.props.handlePalette(url, getPalettesSuccess, "GET")
   }
 
   render() {
@@ -44,8 +47,8 @@ export const mapStateToProps = (state) => ({
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  deleteProject: (url, projectID) => dispatch(deleteProject(url, projectID)),
-  getPalettes: (url) => dispatch(getPalettes(url)),
+  handleProject: (url, actionToDispatch, method, project) => dispatch(handleProject(url, actionToDispatch, method, project)),
+  handlePalette: (url, actionToDispatch, method, palette) => dispatch(handlePalette(url, actionToDispatch, method, palette))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Controls)

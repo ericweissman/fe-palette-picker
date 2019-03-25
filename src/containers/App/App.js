@@ -1,18 +1,19 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { getProjects } from '../../thunks/getProjects'
+import { handleProject } from '../../thunks/handleProject'
 import Controls from '../../containers/Controls/Controls'
 import Generator from '../Generator/Generator'
 import Loading from '../../components/Loading/Loading'
 import ProjectsDisplay from '../../containers/ProjectsDisplay/ProjectsDisplay'
 import PropTypes from 'prop-types'
 import '../../main.scss'
+import { getProjectsSuccess } from '../../actions'
 
 class App extends Component {
 
   componentDidMount() {
     const url = process.env.REACT_APP_BACKEND_URL + '/api/v1/projects'
-    this.props.getProjects(url)
+    this.props.handleProject(url, getProjectsSuccess, 'GET')
   }
 
   render() {
@@ -39,7 +40,7 @@ export const mapStateToProps = (state) => ({
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  getProjects: (url) => dispatch(getProjects(url))
+  handleProject: (url, project, actionToDispatch, method) => dispatch(handleProject(url, project, actionToDispatch, method))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
