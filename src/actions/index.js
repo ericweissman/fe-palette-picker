@@ -28,3 +28,8 @@ export const getPalettesSuccess = (palettes) => ({
   type: 'GET_PALETTES_SUCCESS',
   palettes
 })
+
+export const setActivePalette = (palette) => ({
+  type: 'SET_ACTIVE_PALETTE',
+  palette
+})
