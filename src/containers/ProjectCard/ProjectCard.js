@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { getPalettes } from '../../thunks/getPalettes'
-import { setActivePalette } from '../../actions';
+import { setActivePalette, getPalettesSuccess } from '../../actions';
+import { handlePalette } from '../../thunks/handlePalette';
 import Palette from '../Palette/Palette'
 
 
 class ProjectCard extends Component {
-  constructor() {
-    super();
-  }
-
   setActive = (palette) => {
-    console.log(palette)
     this.props.setActivePalette(palette)
   }
 
@@ -19,7 +14,7 @@ class ProjectCard extends Component {
     e.preventDefault()
     const { id } = this.props.project
     const url = process.env.REACT_APP_BACKEND_URL + `/api/v1/projects/${id}/palettes`
-    this.props.getPalettes(url, id)
+    this.props.handlePalette(url, getPalettesSuccess, "GET")
   }
 
   palettesToDisplay = (id) => {
@@ -50,7 +45,7 @@ export const mapStateToProps = (state) => ({
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  getPalettes: (url) => dispatch(getPalettes(url)),
+  handlePalette: (url, actionToDispatch, method, palette) => dispatch(handlePalette(url, actionToDispatch, method, palette)),
   setActivePalette: (palette) => dispatch(setActivePalette(palette))
 })
 

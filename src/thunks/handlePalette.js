@@ -1,11 +1,11 @@
-import { isLoading, hasErrored, addPaletteSuccess } from '../actions'
+import { isLoading, hasErrored } from '../actions'
 
-export const addPalette = (url, palette) => {
+export const handlePalette = (url, actionToDispatch, method, palette) => {
   return async (dispatch) => {
     try {
       dispatch(isLoading(true))
       const response = await fetch(url, {
-        method: "POST",
+        method: `${method}`,
         headers: {
           "Content-Type": "application/json"
         },
@@ -16,7 +16,7 @@ export const addPalette = (url, palette) => {
       }
       dispatch(isLoading(false))
       const result = await response.json()
-      dispatch(addPaletteSuccess(result))
+      dispatch(actionToDispatch(result))
     } catch (error) {
       dispatch(hasErrored(error.message))
     }
