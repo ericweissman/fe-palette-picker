@@ -1,5 +1,8 @@
 @import './containers/App/App.scss';
+@import './containers/Controls/Controls.scss';
 @import './containers/Generator/Generator.scss';
+@import './components/Loading/Loading.scss';
+@import './containers/ProjectsDisplay/ProjectsDisplay.scss';
 
 * {
   margin: 0;

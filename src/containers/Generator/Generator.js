@@ -69,7 +69,7 @@ class Generator extends Component {
           {
             activePalette.map((palette, i) => {
               return (
-                <div style={{ backgroundColor: palette }} className='color-individual'>
+                <div key={i}style={{ backgroundColor: palette }} className='color-individual'>
                   <button onClick={this.handleClick} value={i}>Lock</button>
                   <h4>{palette}</h4>
                 </div>

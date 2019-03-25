@@ -1,0 +1,14 @@
+.projects-container {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects {
+  border: 2px dotted green;
+  padding: 3px;
+  margin: 2px;
+  width: 32%;
+}
