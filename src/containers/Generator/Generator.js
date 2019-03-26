@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { setActivePalette } from '../../actions';
 import PropTypes from 'prop-types';
+import Swatch from '../../components/Swatch/Swatch'
 import '../../main.scss';
 
 class Generator extends Component {
@@ -48,6 +49,7 @@ class Generator extends Component {
     const { value } = e.target
     const { locked } = this.state
     let checked = []
+    console.log(value)
     if (locked.includes(parseInt(value))) {
       checked = locked.filter(id => id !== parseInt(value))
     } else {
@@ -71,16 +73,15 @@ class Generator extends Component {
           {
             activePalette.map((palette, i) => {
               return (
-                <div key={i} style={{ backgroundColor: palette }} className='color-individual'>
-                  <button onClick={this.handleClick} value={i}>Lock</button>
-                  <h4>{palette}</h4>
-                </div>
+                <Swatch key={i} value={i} palette={palette} handleClick={this.handleClick} />
               )
             })
           }
         </div>
-        <button onClick={this.generatePalette}>Generate Palette</button>
-        <button onClick={this.savePalette}>Save Palette</button>
+        <div className='generator-btns'>
+          <button onClick={this.generatePalette}>Generate Palette</button>
+          <button onClick={this.savePalette}>Save Palette</button>
+        </div>
       </div>
     )
   }
