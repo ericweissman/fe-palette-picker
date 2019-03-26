@@ -49,7 +49,6 @@ class Generator extends Component {
     const { value } = e.target
     const { locked } = this.state
     let checked = []
-    console.log(value)
     if (locked.includes(parseInt(value))) {
       checked = locked.filter(id => id !== parseInt(value))
     } else {
@@ -60,9 +59,6 @@ class Generator extends Component {
     })
   }
 
-  savePalette = (palette) => {
-    //assuming this is where we will POST or PUT a Palette
-  }
 
   render() {
     const { activePalette } = this.props
