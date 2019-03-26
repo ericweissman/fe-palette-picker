@@ -24,6 +24,11 @@ export const deleteProjectSuccess = (projectID) => ({
   projectID
 })
 
+export const editProjectSuccess = (project) => ({
+  type: "EDIT_PROJECT_SUCCESS",
+  project
+})
+
 export const getPalettesSuccess = (palettes, id) => ({
   type: 'GET_PALETTES_SUCCESS',
   palettes,
@@ -37,5 +42,15 @@ export const setActivePalette = (palette) => ({
 
 export const addPaletteSuccess = (palette) => ({
   type: 'ADD_PALETTE_SUCCESS',
+  palette
+})
+
+export const deletePaletteSuccess = (paletteID) => ({
+  type: 'DELETE_PALETTE_SUCCESS',
+  paletteID
+})
+
+export const editPaletteSuccess = (palette) => ({
+  type: 'EDIT_PALETTE_SUCCESS',
   palette
 })
