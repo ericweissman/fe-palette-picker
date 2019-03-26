@@ -6,7 +6,7 @@ export const palettesReducer = (state = [], action) => {
       return [...state, action.palette]
     case 'DELETE_PALETTE_SUCCESS':
       const message = action.paletteID.split(' ')
-      const palette_id = parseInt(message[4])
+      const palette_id = parseInt(message[message.length - 1])
       return state.filter(palette => palette.id !== palette_id)
     case 'EDIT_PALETTE_SUCCESS':
       return state.map(palette => {

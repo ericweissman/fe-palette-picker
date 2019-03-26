@@ -31,21 +31,19 @@ class ProjectCard extends Component {
     this.props.handlePalette(url, getPalettesSuccess, "GET")
   }
 
-  palettesToDisplay = (id) => {
-    const palettes = this.props.palettes.filter(palette => palette.project_id === id)
-    return palettes.map(palette => {
-      return <Palette palette={palette} setActive={this.setActive} deletePalette={this.deletePalette} />
-    })
-  }
-
   render() {
     const { project_name, id } = this.props.project
+    const palettes = this.props.palettes.filter(palette => palette.project_id === id)
+    const palettesToDisplay = palettes.map(palette => {
+      return <Palette key={palette.id} palette={palette} setActive={this.setActive} deletePalette={this.deletePalette} />
+    })
+
     return (
       <div className="project-card">
         <button onClick={this.deleteProject}>Delete</button>
         <h3>{project_name}</h3>
         <button onClick={this.getPalettes} id={id}>Get Palettes</button>
-        {this.palettesToDisplay(id)}
+        {palettesToDisplay}
       </div>
     )
   }
