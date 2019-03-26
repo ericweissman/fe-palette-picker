@@ -8,6 +8,13 @@ export const projectsReducer = (state = [], action) => {
       const message = action.projectID.split(' ')
       const project_id = parseInt(message[message.length - 1])
       return state.filter(project => project.id !== project_id)
+    case 'EDIT_PROJECT_SUCCESS':
+      return state.map(project => {
+        if (project.id === action.project.id) {
+          project.name = action.project.name
+        }
+        return project
+      })
     default:
       return state
   }
