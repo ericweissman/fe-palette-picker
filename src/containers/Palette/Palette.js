@@ -6,7 +6,7 @@ const Palette = (props) => {
 
   return (
     <div className='palette'>
-      <h5>{palette.palette_name}</h5>
+      <h5 onClick={() => setActive(colors)}>{palette.palette_name}</h5>
       <div className='palette-small'>
         {
           colors.map((color, i) => {
