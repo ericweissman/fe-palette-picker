@@ -4,6 +4,7 @@ import { hasErroredReducer } from './hasErroredReducer'
 import { projectsReducer } from './projectsReducer'
 import { palettesReducer } from './palettesReducer'
 import { activePaletteReducer } from './activePaletteReducer'
+import { paletteToEditReducer } from './paletteToEditReducer'
 
 export const rootReducer = combineReducers({
   isLoading: isLoadingReducer,
@@ -11,4 +12,5 @@ export const rootReducer = combineReducers({
   projects: projectsReducer,
   palettes: palettesReducer,
   activePalette: activePaletteReducer,
+  paletteToEdit: paletteToEditReducer
 })

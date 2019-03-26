@@ -54,3 +54,8 @@ export const editPaletteSuccess = (palette) => ({
   type: 'EDIT_PALETTE_SUCCESS',
   palette
 })
+
+export const setPaletteToEdit = (palette) => ({
+  type: 'SET_PALETTE_TO_EDIT',
+  palette
+})
