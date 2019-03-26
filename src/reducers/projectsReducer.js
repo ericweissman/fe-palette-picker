@@ -10,8 +10,8 @@ export const projectsReducer = (state = [], action) => {
       return state.filter(project => project.id !== project_id)
     case 'EDIT_PROJECT_SUCCESS':
       return state.map(project => {
-        if (project.id === action.project.id) {
-          project.name = action.project.name
+        if (project.id === parseInt(action.project.id)) {
+          project.project_name = action.project.project_name
         }
         return project
       })
