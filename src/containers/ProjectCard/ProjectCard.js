@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { deleteProjectSuccess, deletePaletteSuccess, setActivePalette, getPalettesSuccess, editProjectSuccess } from '../../actions';
+import { deleteProjectSuccess, deletePaletteSuccess, setActivePalette, getPalettesSuccess, editProjectSuccess, setPaletteToEdit } from '../../actions';
 import { handleProject } from '../../thunks/handleProject'
 import { handlePalette } from '../../thunks/handlePalette';
 import Palette from '../Palette/Palette'
@@ -47,6 +47,11 @@ class ProjectCard extends Component {
       this.props.handleProject(url, editProjectSuccess, 'PUT', project)
     }
   }
+  
+  editPalette = (palette) => {
+    this.props.setPaletteToEdit(palette)
+  }
+
 
   updateName = (e) => {
     const { value } = e.target
@@ -59,7 +64,7 @@ class ProjectCard extends Component {
     const { project_name, id } = this.props.project
     const palettes = this.props.palettes.filter(palette => palette.project_id === id)
     const palettesToDisplay = palettes.map(palette => {
-      return <Palette key={palette.id} palette={palette} setActive={this.setActive} deletePalette={this.deletePalette} />
+      return <Palette key={palette.id} palette={palette} setActive={this.setActive} deletePalette={this.deletePalette} editPalette={this.editPalette} />
     })
     const { edited } = this.state
 
@@ -89,6 +94,7 @@ export const mapDispatchToProps = (dispatch) => ({
   handleProject: (url, actionToDispatch, method, project) => dispatch(handleProject(url, actionToDispatch, method, project)),
   handlePalette: (url, actionToDispatch, method, palette) => dispatch(handlePalette(url, actionToDispatch, method, palette)),
   setActivePalette: (palette) => dispatch(setActivePalette(palette)),
+  setPaletteToEdit: (palette) => dispatch(setPaletteToEdit(palette))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProjectCard);
