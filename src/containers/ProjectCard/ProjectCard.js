@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { deleteProjectSuccess, deletePaletteSuccess, setActivePalette, getPalettesSuccess } from '../../actions';
+import { deleteProjectSuccess, deletePaletteSuccess, setActivePalette, getPalettesSuccess, editProjectSuccess } from '../../actions';
 import { handleProject } from '../../thunks/handleProject'
 import { handlePalette } from '../../thunks/handlePalette';
 import Palette from '../Palette/Palette'
 
 
 class ProjectCard extends Component {
+  state = {
+    edited: false,
+    projectName: '',
+  }
+
   setActive = (palette) => {
     this.props.setActivePalette(palette)
   }
@@ -31,17 +36,43 @@ class ProjectCard extends Component {
     this.props.handlePalette(url, getPalettesSuccess, "GET")
   }
 
+  toggleEdited = () => {
+    const { id } = this.props.project
+    const { projectName } = this.state
+    const url = process.env.REACT_APP_BACKEND_URL + `/api/v1/projects/${id}`
+    const project = { project_name: projectName }
+
+    this.setState({ edited: !this.state.edited })
+    if (this.state.edited) {
+      this.props.handleProject(url, editProjectSuccess, 'PUT', project)
+    }
+  }
+
+  updateName = (e) => {
+    const { value } = e.target
+    this.setState({
+      projectName: value
+    })
+  }
+
   render() {
     const { project_name, id } = this.props.project
     const palettes = this.props.palettes.filter(palette => palette.project_id === id)
     const palettesToDisplay = palettes.map(palette => {
       return <Palette key={palette.id} palette={palette} setActive={this.setActive} deletePalette={this.deletePalette} />
     })
+    const { edited } = this.state
 
     return (
       <div className="project-card">
-        <button onClick={this.deleteProject}>Delete</button>
-        <h3>{project_name}</h3>
+        <div>
+          {edited ?
+            <input onChange={this.updateName} value={this.state.projectName}></input> :
+            <h3>{project_name}</h3>
+          }
+          <button onClick={this.toggleEdited}>{edited ? 'Save' : 'Edit'}</button>
+          <button onClick={this.deleteProject}>Delete</button>
+        </div>
         <button onClick={this.getPalettes} id={id}>Get Palettes</button>
         {palettesToDisplay}
       </div>
@@ -57,7 +88,7 @@ export const mapStateToProps = (state) => ({
 export const mapDispatchToProps = (dispatch) => ({
   handleProject: (url, actionToDispatch, method, project) => dispatch(handleProject(url, actionToDispatch, method, project)),
   handlePalette: (url, actionToDispatch, method, palette) => dispatch(handlePalette(url, actionToDispatch, method, palette)),
-  setActivePalette: (palette) => dispatch(setActivePalette(palette))
+  setActivePalette: (palette) => dispatch(setActivePalette(palette)),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProjectCard);
