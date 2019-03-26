@@ -1,21 +1,22 @@
 import React from 'react';
 
 const Palette = (props) => {
-  const { palette, setActive } = props
+  const { deletePalette, palette, setActive } = props
   const colors = [palette.color_1, palette.color_2, palette.color_3, palette.color_4, palette.color_5]
+
   return (
     <div className='palette'>
       <h5>{palette.palette_name}</h5>
       <div className='palette-small'>
         {
-          colors.map(color => {
+          colors.map((color, i) => {
             return (
-              <div onClick={() => setActive(colors)} className='small-color' style={{ backgroundColor: color }}> {color} </div>
+              <div key={i} onClick={() => setActive(colors)} className='small-color' style={{ backgroundColor: color }}> {color} </div>
             )
           })
         }
       </div >
-      <button>X</button>
+      <button onClick={() => deletePalette(palette.id)}>X</button>
     </div>
   )
 }
