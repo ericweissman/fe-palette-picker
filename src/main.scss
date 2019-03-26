@@ -1,3 +1,5 @@
+@import './variables';
+@import './components/Swatch/Swatch.scss';
 @import './containers/App/App.scss';
 @import './containers/AddPalette/AddPalette.scss';
 @import './containers/Controls/Controls.scss';
@@ -7,9 +9,12 @@
 @import './containers/ProjectsDisplay/ProjectsDisplay.scss';
 @import './containers/ProjectCard/ProjectCard.scss';
 @import './containers/Palette/Palette.scss';
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Roboto:300,400');
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $text-font;
 }

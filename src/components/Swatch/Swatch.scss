@@ -1,0 +1,57 @@
+.locked {
+  background: url(./images/locked.svg);
+  background-size: cover;
+  height: 35px;
+  width: 35px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 40px;
+}
+.unlocked {
+  background: url(./images/unlocked.svg);
+  background-size: cover;
+  height: 35px;
+  width: 35px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 40px;
+}
+
+.color-individual {
+  height: 175px;
+  width: 175px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.lock-control {
+  h4 {
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: black;
+    text-shadow:
+    -.5px -.5px 0 #ffff,
+    .5px -.5px 0 #ffff,
+    -.5px .5px 0 #ffff,
+    .5px .5px 0 #ffff;
+  }
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.generator-btns {
+  margin: 10px;
+  button {
+    font-size: 20px;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+  }
+}

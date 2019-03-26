@@ -1,8 +1,13 @@
-.color-individual {
-  height: 100px;
-  width: 100px;
-  padding: 10px;
-  border: 1px solid black;
+.generator {
+  h1 {
+    font-family: $title-font;
+    font-size: 2.75rem;
+    text-align: center;
+    margin: 10px;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .palette-main {
