@@ -8,15 +8,17 @@ class AddPalette extends Component {
   state = {
     paletteName: '',
     projectID: -1,
+    errorMessage: ''
   }
 
   handleChange = (e) => {
     const { name, value } = e.target
-    this.setState({ [name]: value })
+    this.setState({ [name]: value, errorMessage: '' })
   }
 
   handleSubmit = (e) => {
     e.preventDefault();
+
     const { projectID, paletteName } = this.state
     const { activePalette } = this.props
     const url = process.env.REACT_APP_BACKEND_URL + `/api/v1/projects/${projectID}/palettes`
@@ -28,22 +30,30 @@ class AddPalette extends Component {
       color_4: activePalette[3],
       color_5: activePalette[4],
     }
-    this.props.handlePalette(url, addPaletteSuccess, "POST", newPalette)
+
+    let message = '';
+    if (projectID === -1) message = 'Please select a project'
+    if (paletteName === '') message = 'Please enter a palette name'
+
+    if (message === '') {
+      this.props.handlePalette(url, addPaletteSuccess, "POST", newPalette)
+    } else {
+      this.setState({ errorMessage: message })
+    }
   }
 
   render() {
     const { projects } = this.props
     const projectList = projects.map(project => {
-      return (
-        <option key={project.id} value={project.id}>
-          {project.project_name}
-        </option>
-      )
+      return <option key={project.id} value={project.id}>{project.project_name}</option>
     })
 
     return (
       <div className="add-palette">
-        <h3>New palette</h3>
+        <div>
+          <h3>New palette</h3>
+          <h5>{this.state.errorMessage}</h5>
+        </div>
         <form>
           <input
             onChange={this.handleChange}
@@ -55,7 +65,7 @@ class AddPalette extends Component {
             Save to...
           </button>
           <select name="projectID" onChange={this.handleChange}>
-            <option  hidden> select a project </option>
+            <option hidden> select a project </option>
             {projects && projectList}
           </select>
         </form>
