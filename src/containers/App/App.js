@@ -9,7 +9,7 @@ import PropTypes from 'prop-types'
 import '../../main.scss'
 import { getProjectsSuccess } from '../../actions'
 
-class App extends Component {
+export class App extends Component {
 
   componentDidMount() {
     const url = process.env.REACT_APP_BACKEND_URL + '/api/v1/projects'
@@ -18,7 +18,6 @@ class App extends Component {
 
   render() {
     const { isLoading } = this.props
-
     if (isLoading) {
       return <Loading />
     } else {
