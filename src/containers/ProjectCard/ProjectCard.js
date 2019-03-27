@@ -69,15 +69,15 @@ class ProjectCard extends Component {
 
     return (
       <div className="project-card">
-        <div>
+        <div className="project-name">
           {edited ?
             <input onChange={this.updateName} value={this.state.projectName}></input> :
             <h3>{project_name}</h3>
           }
-          <button onClick={this.toggleEdited}>{edited ? 'Save' : 'Edit'}</button>
-          <button onClick={this.deleteProject}>Delete</button>
+          <button onClick={this.toggleEdited} className={edited ? "save-name-btn" : "edit-name-btn" }></button>
+          <button className="delete-name-btn" onClick={this.deleteProject}></button>
         </div>
-        <button onClick={this.getPalettes} id={id}>Get Palettes</button>
+        <button className="get-palettes-btn" onClick={this.getPalettes} id={id}>Get Palettes</button>
         {palettesToDisplay}
       </div>
     )
