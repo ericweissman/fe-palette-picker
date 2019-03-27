@@ -17,10 +17,10 @@ export class ProjectsDisplay extends Component {
     };
 
     return (
-      <Masonry 
-      breakpointCols={breakpointColumnsObj}
-      className="projects-display-grid"
-      columnClassName="projects-display-grid_column"
+      <Masonry
+        breakpointCols={breakpointColumnsObj}
+        className="projects-display-grid"
+        columnClassName="projects-display-grid_column"
       >
         {
           projects && projects.map(project => {
@@ -28,10 +28,9 @@ export class ProjectsDisplay extends Component {
           })
         }
         {
-          projects.length === 0 && 
+          projects.length === 0 &&
           <h5>Oops, no projects to display!</h5>
         }
-      </div>
       </Masonry>
     )
   }

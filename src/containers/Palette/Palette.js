@@ -48,6 +48,7 @@ export class Palette extends Component {
     const colors = [palette.color_1, palette.color_2, palette.color_3, palette.color_4, palette.color_5]
     const { edited } = this.state
     return (
+      <div className="palette">
         <div className="palette-name-area">
           {
             edited ?
@@ -66,8 +67,9 @@ export class Palette extends Component {
           }
           <button className="edit-palette-btn" onClick={this.editColors}></button>
           <button className="delete-palette-btn" onClick={() => deletePalette(palette.id)}></button>
-        </div >
+        </div>
       </div>
+
     )
   }
 }
