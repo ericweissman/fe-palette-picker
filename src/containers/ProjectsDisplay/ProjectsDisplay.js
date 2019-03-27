@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { handlePalette } from '../../thunks/handlePalette';
 import ProjectCard from '../ProjectCard/ProjectCard'
 
-class ProjectsDisplay extends Component {
+export class ProjectsDisplay extends Component {
 
   render() {
     const { projects } = this.props
