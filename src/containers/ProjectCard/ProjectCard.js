@@ -52,7 +52,6 @@ class ProjectCard extends Component {
     this.props.setPaletteToEdit(palette)
   }
 
-
   updateName = (e) => {
     const { value } = e.target
     this.setState({
@@ -64,7 +63,7 @@ class ProjectCard extends Component {
     const { project_name, id } = this.props.project
     const palettes = this.props.palettes.filter(palette => palette.project_id === id)
     const palettesToDisplay = palettes.map(palette => {
-      return <Palette key={palette.id} palette={palette} setActive={this.setActive} deletePalette={this.deletePalette} editPalette={this.editPalette} />
+      return <Palette key={palette.id} palette={palette} setActive={this.setActive} deletePalette={this.deletePalette} editPalette={this.editPalette} editName={this.props.handlePalette} />
     })
     const { edited } = this.state
 
