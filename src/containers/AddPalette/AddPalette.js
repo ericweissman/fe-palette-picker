@@ -4,7 +4,7 @@ import { handlePalette } from '../../thunks/handlePalette';
 import { addPaletteSuccess } from '../../actions'
 import PropTypes from 'prop-types'
 
-class AddPalette extends Component {
+export class AddPalette extends Component {
   state = {
     paletteName: '',
     projectID: -1,
