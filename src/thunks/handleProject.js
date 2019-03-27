@@ -20,6 +20,7 @@ export const handleProject = (url, actionToDispatch, method, project) => {
       dispatch(actionToDispatch(result))
     } catch (error) {
       dispatch(hasErrored(error.message))
+      dispatch(isLoading(false))
     }
   }
 }
