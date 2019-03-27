@@ -16,7 +16,7 @@ class Swatch extends Component {
   }
 
   render() {
-    const { palette, value, handleClick } = this.props
+    const { palette, value } = this.props
     const { locked } = this.state
     return (
       <div style={{ backgroundColor: palette }} className='color-individual'>

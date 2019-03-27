@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { handleProject } from '../../thunks/handleProject'
-import Controls from '../../containers/Controls/Controls'
+import Controls from '../../components/Controls/Controls'
 import Generator from '../Generator/Generator'
 import Loading from '../../components/Loading/Loading'
 import ProjectsDisplay from '../../containers/ProjectsDisplay/ProjectsDisplay'

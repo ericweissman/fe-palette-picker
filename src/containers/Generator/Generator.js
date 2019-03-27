@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { setActivePalette } from '../../actions';
+import { setActivePalette, editPaletteSuccess } from '../../actions';
+import { handlePalette } from '../../thunks/handlePalette';
 import PropTypes from 'prop-types';
 import Swatch from '../../components/Swatch/Swatch'
 import '../../main.scss';
@@ -49,7 +50,6 @@ class Generator extends Component {
     const { value } = e.target
     const { locked } = this.state
     let checked = []
-    console.log(value)
     if (locked.includes(parseInt(value))) {
       checked = locked.filter(id => id !== parseInt(value))
     } else {
@@ -60,9 +60,21 @@ class Generator extends Component {
     })
   }
 
-  savePalette = (palette) => {
-    //assuming this is where we will POST or PUT a Palette
+  savePalette = () => {
+    const { id, project_id, palette_name} = this.props.paletteToEdit
+    const { activePalette} = this.props
+    const palette = {
+      palette_name: palette_name,
+      color_1: activePalette[0],
+      color_2: activePalette[1],
+      color_3: activePalette[2],
+      color_4: activePalette[3],
+      color_5: activePalette[4]
+    }
+    const url = process.env.REACT_APP_BACKEND_URL + `/api/v1/projects/${project_id}/palettes/${id}` 
+    this.props.handlePalette(url, editPaletteSuccess, 'PUT', palette)
   }
+
 
   render() {
     const { activePalette } = this.props
@@ -89,10 +101,12 @@ class Generator extends Component {
 
 export const mapStateToProps = (state) => ({
   activePalette: state.activePalette,
+  paletteToEdit: state.paletteToEdit,
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-  setActivePalette: (palette) => dispatch(setActivePalette(palette))
+  setActivePalette: (palette) => dispatch(setActivePalette(palette)),
+  handlePalette: (url, actionToDispatch, method, palette) => dispatch(handlePalette(url, actionToDispatch, method, palette)),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Generator);

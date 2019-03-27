@@ -5,13 +5,20 @@ export const palettesReducer = (state = [], action) => {
     case 'ADD_PALETTE_SUCCESS':
       return [...state, action.palette]
     case 'DELETE_PALETTE_SUCCESS':
-      const message = action.paletteID.split(' ')
-      const palette_id = parseInt(message[message.length - 1])
-      return state.filter(palette => palette.id !== palette_id)
+      return state.filter(palette => palette.id !== parseInt(action.paletteID))
     case 'EDIT_PALETTE_SUCCESS':
       return state.map(palette => {
-        if (palette.id === action.palette.id) {
-          palette = action.palette
+        if (palette.id === parseInt(action.palette.p_id)) {
+          palette = {
+            id: parseInt(action.palette.p_id),
+            color_1: action.palette.color_1,
+            color_2: action.palette.color_2,
+            color_3: action.palette.color_3,
+            color_4: action.palette.color_4,
+            color_5: action.palette.color_5,
+            project_id: palette.project_id,
+            palette_name: action.palette.palette_name,
+          }
         }
         return palette
       })
