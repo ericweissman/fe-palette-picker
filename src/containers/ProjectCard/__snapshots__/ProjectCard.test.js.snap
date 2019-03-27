@@ -1,0 +1,585 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectCard snapshots and initial state should match the initial snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProjectCard
+    palettes={
+      Array [
+        Object {},
+      ]
+    }
+    project={Object {}}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div>
+          <h3 />
+          <button
+            onClick={[Function]}
+          >
+            Edit
+          </button>
+          <button
+            onClick={[Function]}
+          >
+            Delete
+          </button>
+        </div>,
+        <button
+          onClick={[Function]}
+        >
+          Get Palettes
+        </button>,
+        Array [
+          <Connect(Palette)
+            deletePalette={[Function]}
+            editPalette={[Function]}
+            palette={Object {}}
+            setActive={[Function]}
+          />,
+        ],
+      ],
+      "className": "project-card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3 />,
+            <button
+              onClick={[Function]}
+            >
+              Edit
+            </button>,
+            <button
+              onClick={[Function]}
+            >
+              Delete
+            </button>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Edit",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Edit",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Delete",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Delete",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Get Palettes",
+          "id": undefined,
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Get Palettes",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "class",
+        "props": Object {
+          "deletePalette": [Function],
+          "editName": undefined,
+          "editPalette": [Function],
+          "palette": Object {},
+          "setActive": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div>
+            <h3 />
+            <button
+              onClick={[Function]}
+            >
+              Edit
+            </button>
+            <button
+              onClick={[Function]}
+            >
+              Delete
+            </button>
+          </div>,
+          <button
+            onClick={[Function]}
+          >
+            Get Palettes
+          </button>,
+          Array [
+            <Connect(Palette)
+              deletePalette={[Function]}
+              editPalette={[Function]}
+              palette={Object {}}
+              setActive={[Function]}
+            />,
+          ],
+        ],
+        "className": "project-card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3 />,
+              <button
+                onClick={[Function]}
+              >
+                Edit
+              </button>,
+              <button
+                onClick={[Function]}
+              >
+                Delete
+              </button>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Edit",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Edit",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Delete",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Delete",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Get Palettes",
+            "id": undefined,
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Get Palettes",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "class",
+          "props": Object {
+            "deletePalette": [Function],
+            "editName": undefined,
+            "editPalette": [Function],
+            "palette": Object {},
+            "setActive": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`ProjectCard snapshots and initial state should match the snapshot with paletteToEdit and activePalette 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProjectCard
+    palettes={
+      Array [
+        Object {
+          "color_1": "111111",
+          "color_2": "222222",
+          "color_3": "333333",
+          "color_4": "444444",
+          "color_5": "555555",
+          "id": 3,
+        },
+      ]
+    }
+    project={
+      Object {
+        "id": 12,
+        "project_name": "best ever",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div>
+          <h3>
+            best ever
+          </h3>
+          <button
+            onClick={[Function]}
+          >
+            Edit
+          </button>
+          <button
+            onClick={[Function]}
+          >
+            Delete
+          </button>
+        </div>,
+        <button
+          id={12}
+          onClick={[Function]}
+        >
+          Get Palettes
+        </button>,
+        Array [],
+      ],
+      "className": "project-card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3>
+              best ever
+            </h3>,
+            <button
+              onClick={[Function]}
+            >
+              Edit
+            </button>,
+            <button
+              onClick={[Function]}
+            >
+              Delete
+            </button>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "best ever",
+            },
+            "ref": null,
+            "rendered": "best ever",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Edit",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Edit",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Delete",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Delete",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Get Palettes",
+          "id": 12,
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Get Palettes",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div>
+            <h3>
+              best ever
+            </h3>
+            <button
+              onClick={[Function]}
+            >
+              Edit
+            </button>
+            <button
+              onClick={[Function]}
+            >
+              Delete
+            </button>
+          </div>,
+          <button
+            id={12}
+            onClick={[Function]}
+          >
+            Get Palettes
+          </button>,
+          Array [],
+        ],
+        "className": "project-card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3>
+                best ever
+              </h3>,
+              <button
+                onClick={[Function]}
+              >
+                Edit
+              </button>,
+              <button
+                onClick={[Function]}
+              >
+                Delete
+              </button>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "best ever",
+              },
+              "ref": null,
+              "rendered": "best ever",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Edit",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Edit",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Delete",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Delete",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Get Palettes",
+            "id": 12,
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Get Palettes",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

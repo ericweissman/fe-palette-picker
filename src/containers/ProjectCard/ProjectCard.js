@@ -6,7 +6,7 @@ import { handlePalette } from '../../thunks/handlePalette';
 import Palette from '../Palette/Palette'
 
 
-class ProjectCard extends Component {
+export class ProjectCard extends Component {
   state = {
     edited: false,
     projectName: '',
@@ -62,8 +62,8 @@ class ProjectCard extends Component {
   render() {
     const { project_name, id } = this.props.project
     const palettes = this.props.palettes.filter(palette => palette.project_id === id)
-    const palettesToDisplay = palettes.map(palette => {
-      return <Palette key={palette.id} palette={palette} setActive={this.setActive} deletePalette={this.deletePalette} editPalette={this.editPalette} editName={this.props.handlePalette} />
+    const palettesToDisplay = palettes.map((palette, i) => {
+      return <Palette key={i} palette={palette} setActive={this.setActive} deletePalette={this.deletePalette} editPalette={this.editPalette} editName={this.props.handlePalette} />
     })
     const { edited } = this.state
 
