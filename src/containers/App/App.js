@@ -22,7 +22,7 @@ export class App extends Component {
       return <Loading />
     } else {
       return (
-        <div>
+        <div className="App">
           <Generator />
           <Controls />
           <ProjectsDisplay />

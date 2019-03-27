@@ -1,8 +1,57 @@
+.palette {
+  width: 300px;
+  margin: 15px 0;
+  padding-left: 15px;
+}
 .small-color {
-  height: 100px;
-  width: 100px;
+  height: 25px;
+  width: 25px;
 }
 
 .palette-small {
   display: flex;
+}
+
+.palette-name-area {
+  display: flex;
+  align-items: center;
+}
+.palette-name {
+    font-size: 16px;
+    overflow-x: hidden;
+    max-width: 215px;
+    color: $text-accent;
+    margin: 10px 0;
+}
+
+.delete-palette-btn {
+  background: url(./images/delete.svg);
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  margin: 5px;
+
+}
+
+.edit-palette-btn {
+  @extend .delete-palette-btn;
+  background: url(./images/edit.svg);
+  background-size: cover;
+  margin-left: 20px;
+}
+
+.edit-palette-name-btn {
+  @extend .delete-palette-btn;
+  background: url(./images/edit.svg);
+  background-size: cover;
+  margin-left: 10px;
+}
+
+.save-palette-name-btn {
+  @extend .edit-palette-name-btn;
+  background: url(./images/save.svg);
+  background-size: cover;
 }

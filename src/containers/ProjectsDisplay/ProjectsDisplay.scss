@@ -1,14 +1,15 @@
-.projects-container {
-  border: 2px solid black;
-  padding: 10px;
-  margin: 10px;
+.projects-display-grid {
   display: flex;
-  flex-wrap: wrap;
+  margin-left: 15px;
+  width: auto;
 }
 
-.projects {
-  border: 2px dotted green;
-  padding: 3px;
-  margin: 2px;
-  width: 32%;
+.projects-display-grid_column {
+  padding-left: 30px;
+  background-clip: padding-box;
+}
+ 
+.projects-display-grid_column > div {
+  background: grey;
+  margin-bottom: 30px;
 }

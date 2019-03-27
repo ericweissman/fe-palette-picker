@@ -1,4 +1,69 @@
 .project-card {
-  border: 2px solid seagreen;
-  margin: 10px;
+  box-shadow: 0px 13px 5px -10px rgba(23,22,23,1);
+  margin: 25px;
+  width: 315px;
+  display: flex;
+  flex-direction: column;
+  background-color: $secondary-background;
+  align-items: center;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.project-name {
+  display: flex;
+  padding: 15px 0 10px 15px;
+  button {
+    width: 20px;
+    height: 20px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin: 5px 10px;
+   
+  }
+  .save-name-btn {
+    @extend button;
+    background: url(./images/save.svg);
+    background-size: cover;
+  }
+
+  .edit-name-btn {
+     @extend button;
+    background: url(./images/edit.svg);
+    background-size: cover;
+  }
+  
+  .delete-name-btn {
+    @extend button;
+    background: url(./images/delete.svg);
+    background-size: cover;
+  }
+
+  h3 {
+    font-size: 20px;
+    overflow-x: hidden;
+    width: 215px;
+    color: $text-accent;
+  }
+
+  input {
+    @extend h3;
+    background-color: #212121;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+    padding: 5px;
+  }
+}
+
+.get-palettes-btn {
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  width: 115px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  padding: 5px;
 }

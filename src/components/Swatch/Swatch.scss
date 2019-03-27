@@ -11,17 +11,17 @@
 .unlocked {
   background: url(./images/unlocked.svg);
   background-size: cover;
-  height: 35px;
-  width: 35px;
+  height: 45px;
+  width: 45px;
   border: none;
   cursor: pointer;
   outline: none;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 .color-individual {
-  height: 175px;
-  width: 175px;
+  height: 250px;
+  width: 250px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -29,14 +29,14 @@
 
 .lock-control {
   h4 {
-    font-size: 1.15rem;
+    font-size: 24px;
     font-weight: 400;
     color: black;
     text-shadow:
-    -.5px -.5px 0 #ffff,
-    .5px -.5px 0 #ffff,
-    -.5px .5px 0 #ffff,
-    .5px .5px 0 #ffff;
+    -.3px -.3px 0 #ffff,
+    .3px -.3px 0 #ffff,
+    -.3px .3px 0 #ffff,
+    .3px .3px 0 #ffff;
   }
   flex-direction: column;
   display: flex;
