@@ -1,0 +1,818 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Generator snapshots and initial state should match the initial snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Generator
+    activePalette={
+      Array [
+        "default",
+      ]
+    }
+    paletteToEdit={Object {}}
+    setActivePalette={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          Palette Picker
+        </h1>,
+        <div
+          className="palette-main"
+        >
+          <Swatch
+            handleClick={[Function]}
+            palette="default"
+            value={0}
+          />
+        </div>,
+        <div
+          className="generator-btns"
+        >
+          <button
+            onClick={[Function]}
+          >
+            Generate Palette
+          </button>
+          <button
+            onClick={[Function]}
+          >
+            Save Palette
+          </button>
+        </div>,
+      ],
+      "className": "generator",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Palette Picker",
+        },
+        "ref": null,
+        "rendered": "Palette Picker",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Swatch
+              handleClick={[Function]}
+              palette="default"
+              value={0}
+            />,
+          ],
+          "className": "palette-main",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "class",
+            "props": Object {
+              "handleClick": [Function],
+              "palette": "default",
+              "value": 0,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <button
+              onClick={[Function]}
+            >
+              Generate Palette
+            </button>,
+            <button
+              onClick={[Function]}
+            >
+              Save Palette
+            </button>,
+          ],
+          "className": "generator-btns",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Generate Palette",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Generate Palette",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Save Palette",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Save Palette",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Palette Picker
+          </h1>,
+          <div
+            className="palette-main"
+          >
+            <Swatch
+              handleClick={[Function]}
+              palette="default"
+              value={0}
+            />
+          </div>,
+          <div
+            className="generator-btns"
+          >
+            <button
+              onClick={[Function]}
+            >
+              Generate Palette
+            </button>
+            <button
+              onClick={[Function]}
+            >
+              Save Palette
+            </button>
+          </div>,
+        ],
+        "className": "generator",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Palette Picker",
+          },
+          "ref": null,
+          "rendered": "Palette Picker",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Swatch
+                handleClick={[Function]}
+                palette="default"
+                value={0}
+              />,
+            ],
+            "className": "palette-main",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "class",
+              "props": Object {
+                "handleClick": [Function],
+                "palette": "default",
+                "value": 0,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <button
+                onClick={[Function]}
+              >
+                Generate Palette
+              </button>,
+              <button
+                onClick={[Function]}
+              >
+                Save Palette
+              </button>,
+            ],
+            "className": "generator-btns",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Generate Palette",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Generate Palette",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Save Palette",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Save Palette",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`Generator snapshots and initial state should match the snapshot with paletteToEdit and activePalette 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Generator
+    activePalette={
+      Array [
+        "111111",
+        "222222",
+        "333333",
+        "444444",
+        "555555",
+      ]
+    }
+    paletteToEdit={
+      Object {
+        "id": 21,
+        "palette_name": "new",
+        "project_id": 10,
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          Palette Picker
+        </h1>,
+        <div
+          className="palette-main"
+        >
+          <Swatch
+            handleClick={[Function]}
+            palette="111111"
+            value={0}
+          />
+          <Swatch
+            handleClick={[Function]}
+            palette="222222"
+            value={1}
+          />
+          <Swatch
+            handleClick={[Function]}
+            palette="333333"
+            value={2}
+          />
+          <Swatch
+            handleClick={[Function]}
+            palette="444444"
+            value={3}
+          />
+          <Swatch
+            handleClick={[Function]}
+            palette="555555"
+            value={4}
+          />
+        </div>,
+        <div
+          className="generator-btns"
+        >
+          <button
+            onClick={[Function]}
+          >
+            Generate Palette
+          </button>
+          <button
+            onClick={[Function]}
+          >
+            Save Palette
+          </button>
+        </div>,
+      ],
+      "className": "generator",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Palette Picker",
+        },
+        "ref": null,
+        "rendered": "Palette Picker",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Swatch
+              handleClick={[Function]}
+              palette="111111"
+              value={0}
+            />,
+            <Swatch
+              handleClick={[Function]}
+              palette="222222"
+              value={1}
+            />,
+            <Swatch
+              handleClick={[Function]}
+              palette="333333"
+              value={2}
+            />,
+            <Swatch
+              handleClick={[Function]}
+              palette="444444"
+              value={3}
+            />,
+            <Swatch
+              handleClick={[Function]}
+              palette="555555"
+              value={4}
+            />,
+          ],
+          "className": "palette-main",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "class",
+            "props": Object {
+              "handleClick": [Function],
+              "palette": "111111",
+              "value": 0,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "class",
+            "props": Object {
+              "handleClick": [Function],
+              "palette": "222222",
+              "value": 1,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "class",
+            "props": Object {
+              "handleClick": [Function],
+              "palette": "333333",
+              "value": 2,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "class",
+            "props": Object {
+              "handleClick": [Function],
+              "palette": "444444",
+              "value": 3,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "4",
+            "nodeType": "class",
+            "props": Object {
+              "handleClick": [Function],
+              "palette": "555555",
+              "value": 4,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <button
+              onClick={[Function]}
+            >
+              Generate Palette
+            </button>,
+            <button
+              onClick={[Function]}
+            >
+              Save Palette
+            </button>,
+          ],
+          "className": "generator-btns",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Generate Palette",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Generate Palette",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Save Palette",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Save Palette",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Palette Picker
+          </h1>,
+          <div
+            className="palette-main"
+          >
+            <Swatch
+              handleClick={[Function]}
+              palette="111111"
+              value={0}
+            />
+            <Swatch
+              handleClick={[Function]}
+              palette="222222"
+              value={1}
+            />
+            <Swatch
+              handleClick={[Function]}
+              palette="333333"
+              value={2}
+            />
+            <Swatch
+              handleClick={[Function]}
+              palette="444444"
+              value={3}
+            />
+            <Swatch
+              handleClick={[Function]}
+              palette="555555"
+              value={4}
+            />
+          </div>,
+          <div
+            className="generator-btns"
+          >
+            <button
+              onClick={[Function]}
+            >
+              Generate Palette
+            </button>
+            <button
+              onClick={[Function]}
+            >
+              Save Palette
+            </button>
+          </div>,
+        ],
+        "className": "generator",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Palette Picker",
+          },
+          "ref": null,
+          "rendered": "Palette Picker",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Swatch
+                handleClick={[Function]}
+                palette="111111"
+                value={0}
+              />,
+              <Swatch
+                handleClick={[Function]}
+                palette="222222"
+                value={1}
+              />,
+              <Swatch
+                handleClick={[Function]}
+                palette="333333"
+                value={2}
+              />,
+              <Swatch
+                handleClick={[Function]}
+                palette="444444"
+                value={3}
+              />,
+              <Swatch
+                handleClick={[Function]}
+                palette="555555"
+                value={4}
+              />,
+            ],
+            "className": "palette-main",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "class",
+              "props": Object {
+                "handleClick": [Function],
+                "palette": "111111",
+                "value": 0,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "class",
+              "props": Object {
+                "handleClick": [Function],
+                "palette": "222222",
+                "value": 1,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "class",
+              "props": Object {
+                "handleClick": [Function],
+                "palette": "333333",
+                "value": 2,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "class",
+              "props": Object {
+                "handleClick": [Function],
+                "palette": "444444",
+                "value": 3,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "4",
+              "nodeType": "class",
+              "props": Object {
+                "handleClick": [Function],
+                "palette": "555555",
+                "value": 4,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <button
+                onClick={[Function]}
+              >
+                Generate Palette
+              </button>,
+              <button
+                onClick={[Function]}
+              >
+                Save Palette
+              </button>,
+            ],
+            "className": "generator-btns",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Generate Palette",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Generate Palette",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Save Palette",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Save Palette",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
