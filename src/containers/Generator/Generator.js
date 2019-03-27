@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import Swatch from '../../components/Swatch/Swatch'
 import '../../main.scss';
 
-class Generator extends Component {
+export class Generator extends Component {
   constructor() {
     super()
     this.state = {
