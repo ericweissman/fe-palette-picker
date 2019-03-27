@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types'
 
-class Swatch extends Component {
+
+export class Swatch extends Component {
   constructor() {
     super()
     this.state = {
@@ -30,3 +32,8 @@ class Swatch extends Component {
 }
 
 export default Swatch;
+
+Swatch.propTypes = {
+  handleClick: PropTypes.func,
+  value: PropTypes.string,
+}
