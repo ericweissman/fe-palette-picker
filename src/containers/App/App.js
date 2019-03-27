@@ -47,6 +47,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(App);
 App.propTypes = {
   error: PropTypes.string,
   isLoading: PropTypes.bool,
+  handlePalette: PropTypes.func,
 }
 
 App.defaultProps = {

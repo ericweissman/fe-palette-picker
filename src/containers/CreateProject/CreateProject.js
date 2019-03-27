@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { handleProject } from '../../thunks/handleProject'
 import { addProjectSuccess } from '../../actions'
+import PropTypes from 'prop-types'
 
 export class CreateProject extends Component {
   state = {
@@ -18,7 +19,6 @@ export class CreateProject extends Component {
     e.preventDefault();
     const { projects, handleProject } = this.props
     const { projectName } = this.state
-    // const { handleProject } = this.props
     const project = { project_name: projectName }
     const url = process.env.REACT_APP_BACKEND_URL + '/api/v1/projects'
 
@@ -61,3 +61,8 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(CreateProject)
+
+CreateProject.propTypes = {
+  handleProject: PropTypes.func,
+  projects: PropTypes.array,
+}

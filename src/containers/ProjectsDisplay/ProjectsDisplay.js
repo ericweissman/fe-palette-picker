@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { handlePalette } from '../../thunks/handlePalette';
 import ProjectCard from '../ProjectCard/ProjectCard'
+import PropTypes from 'prop-types'
 
 export class ProjectsDisplay extends Component {
 
   render() {
     const { projects } = this.props
-    
     return (
       <div className="projects-container">
         {
@@ -30,3 +30,9 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProjectsDisplay);
+
+ProjectsDisplay.propTypes = {
+  handlePalette: PropTypes.func,
+  projects: PropTypes.array,
+  palettes: PropTypes.array,
+}

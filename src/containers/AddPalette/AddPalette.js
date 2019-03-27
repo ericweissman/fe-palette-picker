@@ -85,3 +85,9 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(AddPalette)
+
+AddPalette.propTypes = {
+  projects: PropTypes.array,
+  activePalette: PropTypes.array,
+  handlePalette: PropTypes.func,
+}

@@ -4,7 +4,7 @@ import { deleteProjectSuccess, deletePaletteSuccess, setActivePalette, getPalett
 import { handleProject } from '../../thunks/handleProject'
 import { handlePalette } from '../../thunks/handlePalette';
 import Palette from '../Palette/Palette'
-
+import PropTypes from 'prop-types'
 
 export class ProjectCard extends Component {
   state = {
@@ -97,3 +97,13 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProjectCard);
+
+ProjectCard.propTypes = {
+  handleProject: PropTypes.func,
+  handlePalette: PropTypes.func,
+  setActivePalette: PropTypes.func,
+  setPaletteToEdit: PropTypes.func,
+  project: PropTypes.object,
+  projects: PropTypes.array,
+  palettes: PropTypes.array,
+}
