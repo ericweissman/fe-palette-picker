@@ -8,7 +8,6 @@ export const hasErrored = (message) => ({
   message
 });
 
-//projects
 export const getProjectsSuccess = (projects) => ({
   type: 'GET_PROJECTS_SUCCESS',
   projects

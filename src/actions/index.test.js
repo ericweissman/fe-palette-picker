@@ -190,4 +190,30 @@ describe('actions', () => {
     const result = actions.editPaletteSuccess(palette)
     expect(result).toEqual(expected)
   })
+
+  it('should return the setPaletteToEdit action with a type and palette', () => {
+    const palette = {
+      "palette_name": "Sample Palette",
+      "color_1": "#D12E39",
+      "color_2": "#6746B5",
+      "color_3": "#CB4F68",
+      "color_4": "#ABF90D",
+      "color_5": "#0189F7"
+    }
+
+    const expected = {
+      type: 'SET_PALETTE_TO_EDIT',
+      palette: {
+        "palette_name": "Sample Palette",
+        "color_1": "#D12E39",
+        "color_2": "#6746B5",
+        "color_3": "#CB4F68",
+        "color_4": "#ABF90D",
+        "color_5": "#0189F7"
+      }
+    }
+
+    const result = actions.setPaletteToEdit(palette)
+    expect(result).toEqual(expected)
+  })
 })
