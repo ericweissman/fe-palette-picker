@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { handlePalette } from '../../thunks/handlePalette';
 import ProjectCard from '../ProjectCard/ProjectCard'
+import PropTypes from 'prop-types'
 import Masonry from 'react-masonry-component'
-
 
 export class ProjectsDisplay extends Component {
 
@@ -27,6 +27,11 @@ export class ProjectsDisplay extends Component {
             return <ProjectCard key={project.id} project={project} />
           })
         }
+        {
+          projects.length === 0 && 
+          <h5>Oops, no projects to display!</h5>
+        }
+      </div>
       </Masonry>
     )
   }
@@ -42,3 +47,9 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProjectsDisplay);
+
+ProjectsDisplay.propTypes = {
+  handlePalette: PropTypes.func,
+  projects: PropTypes.array,
+  palettes: PropTypes.array,
+}

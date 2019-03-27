@@ -48,11 +48,10 @@ export class Palette extends Component {
     const colors = [palette.color_1, palette.color_2, palette.color_3, palette.color_4, palette.color_5]
     const { edited } = this.state
     return (
-      <div className='palette'>
         <div className="palette-name-area">
           {
             edited ?
-              <input className="edit-palette-name" onChange={this.updateName} value={this.state.name}></input> :
+              <input className="edit-palette-name" autoComplete="off" onChange={this.updateName} value={this.state.name}></input> :
               <h5 className='palette-name' onClick={() => setActive(colors)}>{palette.palette_name}</h5>
           }
           <button onClick={this.toggleEdited} className={edited ? 'save-palette-name-btn' : 'edit-palette-name-btn'}></button>

@@ -4,7 +4,7 @@ import { deleteProjectSuccess, deletePaletteSuccess, setActivePalette, getPalett
 import { handleProject } from '../../thunks/handleProject'
 import { handlePalette } from '../../thunks/handlePalette';
 import Palette from '../Palette/Palette'
-
+import PropTypes from 'prop-types'
 
 export class ProjectCard extends Component {
   state = {
@@ -43,7 +43,7 @@ export class ProjectCard extends Component {
     const project = { project_name: projectName }
 
     this.setState({ edited: !this.state.edited })
-    if (this.state.edited) {
+    if (this.state.edited && projectName !== '') {
       this.props.handleProject(url, editProjectSuccess, 'PUT', project)
     }
   }
@@ -71,7 +71,7 @@ export class ProjectCard extends Component {
       <div className="project-card">
         <div className="project-name">
           {edited ?
-            <input onChange={this.updateName} value={this.state.projectName}></input> :
+            <input autoComplete="off" onChange={this.updateName} value={this.state.projectName}></input> :
             <h3>{project_name}</h3>
           }
           <button onClick={this.toggleEdited} className={edited ? "save-name-btn" : "edit-name-btn" }></button>
@@ -97,3 +97,13 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProjectCard);
+
+ProjectCard.propTypes = {
+  handleProject: PropTypes.func,
+  handlePalette: PropTypes.func,
+  setActivePalette: PropTypes.func,
+  setPaletteToEdit: PropTypes.func,
+  project: PropTypes.object,
+  projects: PropTypes.array,
+  palettes: PropTypes.array,
+}

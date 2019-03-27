@@ -19,6 +19,7 @@ export const handlePalette = (url, actionToDispatch, method, palette) => {
       dispatch(actionToDispatch(result))
     } catch (error) {
       dispatch(hasErrored(error.message))
+      dispatch(isLoading(false))
     }
   }
 }

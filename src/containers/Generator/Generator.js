@@ -111,7 +111,7 @@ export const mapDispatchToProps = (dispatch) => ({
 
 export default connect(mapStateToProps, mapDispatchToProps)(Generator);
 
-Swatch.propTypes = {
+Generator.propTypes = {
   handlePalette: PropTypes.func,
   setActivePalette: PropTypes.func,
   activePalette: PropTypes.array,
