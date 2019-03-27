@@ -51,7 +51,7 @@ export class Palette extends Component {
       <div className='palette'>
         {
           edited ?
-            <input onChange={this.updateName} value={this.state.name}></input> :
+            <input autoComplete="off" onChange={this.updateName} value={this.state.name}></input> :
             <h5 className='palette-name' onClick={() => setActive(colors)}>{palette.palette_name}</h5>
         }
         <button onClick={this.toggleEdited}>{edited ? 'Save' : 'Edit'}</button>

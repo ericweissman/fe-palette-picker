@@ -71,7 +71,7 @@ export class ProjectCard extends Component {
       <div className="project-card">
         <div>
           {edited ?
-            <input onChange={this.updateName} value={this.state.projectName}></input> :
+            <input autoComplete="off" onChange={this.updateName} value={this.state.projectName}></input> :
             <h3>{project_name}</h3>
           }
           <button onClick={this.toggleEdited}>{edited ? 'Save' : 'Edit'}</button>

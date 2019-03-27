@@ -51,13 +51,14 @@ export class AddPalette extends Component {
     return (
       <div className="add-palette">
         <div>
-          <h3>New palette</h3>
+          <h3>Create new palette</h3>
           <h5>{this.state.errorMessage}</h5>
         </div>
         <form>
           <input
+            autoComplete="off"
             onChange={this.handleChange}
-            placeholder='new palette name'
+            placeholder='palette name'
             name='paletteName'
             value={this.state.paletteName}>
           </input>

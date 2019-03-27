@@ -6,43 +6,58 @@ import { addProjectSuccess } from '../../actions'
 export class CreateProject extends Component {
   state = {
     projectName: '',
+    message: '',
   }
 
   handleChange = (e) => {
     const { name, value } = e.target
-    this.setState({ [name]: value })
+    this.setState({ [name]: value, message: '' })
   }
 
   handleSubmit = (e) => {
     e.preventDefault();
-    const { handleProject } = this.props
-    const project = { project_name: this.state.projectName }
+    const { projects, handleProject } = this.props
+    const { projectName } = this.state
+    // const { handleProject } = this.props
+    const project = { project_name: projectName }
     const url = process.env.REACT_APP_BACKEND_URL + '/api/v1/projects'
-    handleProject(url, addProjectSuccess, 'POST', project)
+
+    const checked = projects.filter(project => project.project_name === projectName)
+    if (!checked.length) {
+      handleProject(url, addProjectSuccess, 'POST', project)
+    } else {
+      this.setState({message: 'Please enter a different name'})
+    }
   }
 
   render() {
     return (
       <div className="create-project">
-        <h3>New Project</h3>
+        <h3>Create a new project:</h3>
         <form>
           <input
+            autoComplete="off"
             onChange={this.handleChange}
-            placeholder='new project name'
+            placeholder='project name'
             name='projectName'
             value={this.state.projectName}>
           </input>
           <button onClick={this.handleSubmit}>
             Save Project
           </button>
+          {<h5>{this.state.message}</h5>}
         </form>
       </div>
     )
   }
 }
 
+export const mapStateToProps = (state) => ({
+  projects: state.projects,
+});
+
 export const mapDispatchToProps = (dispatch) => ({
   handleProject: (url, actionToDispatch, method, project) => dispatch(handleProject(url, actionToDispatch, method, project))
 })
 
-export default connect(null, mapDispatchToProps)(CreateProject)
+export default connect(mapStateToProps, mapDispatchToProps)(CreateProject)
