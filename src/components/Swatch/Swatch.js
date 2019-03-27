@@ -35,5 +35,5 @@ export default Swatch;
 
 Swatch.propTypes = {
   handleClick: PropTypes.func,
-  value: PropTypes.string,
+  value: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 }
