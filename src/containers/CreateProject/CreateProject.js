@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { handleProject } from '../../thunks/handleProject'
 import { addProjectSuccess } from '../../actions'
 
-class CreateProject extends Component {
+export class CreateProject extends Component {
   state = {
     projectName: '',
   }
