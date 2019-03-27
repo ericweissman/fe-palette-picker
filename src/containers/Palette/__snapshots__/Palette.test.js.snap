@@ -1,0 +1,1525 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Palette should match the correct snapshot when edited is false 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Palette
+    deletePalette={[MockFunction]}
+    editName={[MockFunction]}
+    editPalette={[MockFunction]}
+    handlePalette={[MockFunction]}
+    palette={
+      Object {
+        "color_1": "AAAAA",
+        "color_2": "AAAAA",
+        "color_3": "AAAAA",
+        "color_4": "AAAAA",
+        "color_5": "AAAAA",
+        "palette_name": "Cool Palette",
+      }
+    }
+    setActive={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h5
+          className="palette-name"
+          onClick={[Function]}
+        >
+          Cool Palette
+        </h5>,
+        <button
+          onClick={[Function]}
+        >
+          Edit
+        </button>,
+        <div
+          className="palette-small"
+        >
+          <div
+            className="small-color"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "AAAAA",
+              }
+            }
+          >
+             
+            AAAAA
+             
+          </div>
+          <div
+            className="small-color"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "AAAAA",
+              }
+            }
+          >
+             
+            AAAAA
+             
+          </div>
+          <div
+            className="small-color"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "AAAAA",
+              }
+            }
+          >
+             
+            AAAAA
+             
+          </div>
+          <div
+            className="small-color"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "AAAAA",
+              }
+            }
+          >
+             
+            AAAAA
+             
+          </div>
+          <div
+            className="small-color"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "AAAAA",
+              }
+            }
+          >
+             
+            AAAAA
+             
+          </div>
+        </div>,
+        <button
+          onClick={[Function]}
+        >
+          X
+        </button>,
+        <button
+          onClick={[Function]}
+        >
+           Edit
+        </button>,
+      ],
+      "className": "palette",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Cool Palette",
+          "className": "palette-name",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Cool Palette",
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Edit",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Edit",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="small-color"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "AAAAA",
+                }
+              }
+            >
+               
+              AAAAA
+               
+            </div>,
+            <div
+              className="small-color"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "AAAAA",
+                }
+              }
+            >
+               
+              AAAAA
+               
+            </div>,
+            <div
+              className="small-color"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "AAAAA",
+                }
+              }
+            >
+               
+              AAAAA
+               
+            </div>,
+            <div
+              className="small-color"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "AAAAA",
+                }
+              }
+            >
+               
+              AAAAA
+               
+            </div>,
+            <div
+              className="small-color"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "AAAAA",
+                }
+              }
+            >
+               
+              AAAAA
+               
+            </div>,
+          ],
+          "className": "palette-small",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " ",
+                "AAAAA",
+                " ",
+              ],
+              "className": "small-color",
+              "onClick": [Function],
+              "style": Object {
+                "backgroundColor": "AAAAA",
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              " ",
+              "AAAAA",
+              " ",
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " ",
+                "AAAAA",
+                " ",
+              ],
+              "className": "small-color",
+              "onClick": [Function],
+              "style": Object {
+                "backgroundColor": "AAAAA",
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              " ",
+              "AAAAA",
+              " ",
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " ",
+                "AAAAA",
+                " ",
+              ],
+              "className": "small-color",
+              "onClick": [Function],
+              "style": Object {
+                "backgroundColor": "AAAAA",
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              " ",
+              "AAAAA",
+              " ",
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " ",
+                "AAAAA",
+                " ",
+              ],
+              "className": "small-color",
+              "onClick": [Function],
+              "style": Object {
+                "backgroundColor": "AAAAA",
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              " ",
+              "AAAAA",
+              " ",
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "4",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " ",
+                "AAAAA",
+                " ",
+              ],
+              "className": "small-color",
+              "onClick": [Function],
+              "style": Object {
+                "backgroundColor": "AAAAA",
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              " ",
+              "AAAAA",
+              " ",
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "X",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "X",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": " Edit",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": " Edit",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h5
+            className="palette-name"
+            onClick={[Function]}
+          >
+            Cool Palette
+          </h5>,
+          <button
+            onClick={[Function]}
+          >
+            Edit
+          </button>,
+          <div
+            className="palette-small"
+          >
+            <div
+              className="small-color"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "AAAAA",
+                }
+              }
+            >
+               
+              AAAAA
+               
+            </div>
+            <div
+              className="small-color"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "AAAAA",
+                }
+              }
+            >
+               
+              AAAAA
+               
+            </div>
+            <div
+              className="small-color"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "AAAAA",
+                }
+              }
+            >
+               
+              AAAAA
+               
+            </div>
+            <div
+              className="small-color"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "AAAAA",
+                }
+              }
+            >
+               
+              AAAAA
+               
+            </div>
+            <div
+              className="small-color"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "AAAAA",
+                }
+              }
+            >
+               
+              AAAAA
+               
+            </div>
+          </div>,
+          <button
+            onClick={[Function]}
+          >
+            X
+          </button>,
+          <button
+            onClick={[Function]}
+          >
+             Edit
+          </button>,
+        ],
+        "className": "palette",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Cool Palette",
+            "className": "palette-name",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Cool Palette",
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Edit",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Edit",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="small-color"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "AAAAA",
+                  }
+                }
+              >
+                 
+                AAAAA
+                 
+              </div>,
+              <div
+                className="small-color"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "AAAAA",
+                  }
+                }
+              >
+                 
+                AAAAA
+                 
+              </div>,
+              <div
+                className="small-color"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "AAAAA",
+                  }
+                }
+              >
+                 
+                AAAAA
+                 
+              </div>,
+              <div
+                className="small-color"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "AAAAA",
+                  }
+                }
+              >
+                 
+                AAAAA
+                 
+              </div>,
+              <div
+                className="small-color"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "AAAAA",
+                  }
+                }
+              >
+                 
+                AAAAA
+                 
+              </div>,
+            ],
+            "className": "palette-small",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "AAAAA",
+                  " ",
+                ],
+                "className": "small-color",
+                "onClick": [Function],
+                "style": Object {
+                  "backgroundColor": "AAAAA",
+                },
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "AAAAA",
+                " ",
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "AAAAA",
+                  " ",
+                ],
+                "className": "small-color",
+                "onClick": [Function],
+                "style": Object {
+                  "backgroundColor": "AAAAA",
+                },
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "AAAAA",
+                " ",
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "AAAAA",
+                  " ",
+                ],
+                "className": "small-color",
+                "onClick": [Function],
+                "style": Object {
+                  "backgroundColor": "AAAAA",
+                },
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "AAAAA",
+                " ",
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "AAAAA",
+                  " ",
+                ],
+                "className": "small-color",
+                "onClick": [Function],
+                "style": Object {
+                  "backgroundColor": "AAAAA",
+                },
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "AAAAA",
+                " ",
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "4",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "AAAAA",
+                  " ",
+                ],
+                "className": "small-color",
+                "onClick": [Function],
+                "style": Object {
+                  "backgroundColor": "AAAAA",
+                },
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "AAAAA",
+                " ",
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "X",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "X",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": " Edit",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": " Edit",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`Palette should match the correct snapshot when edited is true 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Palette
+    deletePalette={[MockFunction]}
+    editName={[MockFunction]}
+    editPalette={[MockFunction]}
+    handlePalette={[MockFunction]}
+    palette={
+      Object {
+        "color_1": "AAAAA",
+        "color_2": "AAAAA",
+        "color_3": "AAAAA",
+        "color_4": "AAAAA",
+        "color_5": "AAAAA",
+        "palette_name": "Cool Palette",
+      }
+    }
+    setActive={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h5
+          className="palette-name"
+          onClick={[Function]}
+        >
+          Cool Palette
+        </h5>,
+        <button
+          onClick={[Function]}
+        >
+          Edit
+        </button>,
+        <div
+          className="palette-small"
+        >
+          <div
+            className="small-color"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "AAAAA",
+              }
+            }
+          >
+             
+            AAAAA
+             
+          </div>
+          <div
+            className="small-color"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "AAAAA",
+              }
+            }
+          >
+             
+            AAAAA
+             
+          </div>
+          <div
+            className="small-color"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "AAAAA",
+              }
+            }
+          >
+             
+            AAAAA
+             
+          </div>
+          <div
+            className="small-color"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "AAAAA",
+              }
+            }
+          >
+             
+            AAAAA
+             
+          </div>
+          <div
+            className="small-color"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "AAAAA",
+              }
+            }
+          >
+             
+            AAAAA
+             
+          </div>
+        </div>,
+        <button
+          onClick={[Function]}
+        >
+          X
+        </button>,
+        <button
+          onClick={[Function]}
+        >
+           Edit
+        </button>,
+      ],
+      "className": "palette",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Cool Palette",
+          "className": "palette-name",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Cool Palette",
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Edit",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Edit",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="small-color"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "AAAAA",
+                }
+              }
+            >
+               
+              AAAAA
+               
+            </div>,
+            <div
+              className="small-color"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "AAAAA",
+                }
+              }
+            >
+               
+              AAAAA
+               
+            </div>,
+            <div
+              className="small-color"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "AAAAA",
+                }
+              }
+            >
+               
+              AAAAA
+               
+            </div>,
+            <div
+              className="small-color"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "AAAAA",
+                }
+              }
+            >
+               
+              AAAAA
+               
+            </div>,
+            <div
+              className="small-color"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "AAAAA",
+                }
+              }
+            >
+               
+              AAAAA
+               
+            </div>,
+          ],
+          "className": "palette-small",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " ",
+                "AAAAA",
+                " ",
+              ],
+              "className": "small-color",
+              "onClick": [Function],
+              "style": Object {
+                "backgroundColor": "AAAAA",
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              " ",
+              "AAAAA",
+              " ",
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " ",
+                "AAAAA",
+                " ",
+              ],
+              "className": "small-color",
+              "onClick": [Function],
+              "style": Object {
+                "backgroundColor": "AAAAA",
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              " ",
+              "AAAAA",
+              " ",
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " ",
+                "AAAAA",
+                " ",
+              ],
+              "className": "small-color",
+              "onClick": [Function],
+              "style": Object {
+                "backgroundColor": "AAAAA",
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              " ",
+              "AAAAA",
+              " ",
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " ",
+                "AAAAA",
+                " ",
+              ],
+              "className": "small-color",
+              "onClick": [Function],
+              "style": Object {
+                "backgroundColor": "AAAAA",
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              " ",
+              "AAAAA",
+              " ",
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "4",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " ",
+                "AAAAA",
+                " ",
+              ],
+              "className": "small-color",
+              "onClick": [Function],
+              "style": Object {
+                "backgroundColor": "AAAAA",
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              " ",
+              "AAAAA",
+              " ",
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "X",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "X",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": " Edit",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": " Edit",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h5
+            className="palette-name"
+            onClick={[Function]}
+          >
+            Cool Palette
+          </h5>,
+          <button
+            onClick={[Function]}
+          >
+            Edit
+          </button>,
+          <div
+            className="palette-small"
+          >
+            <div
+              className="small-color"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "AAAAA",
+                }
+              }
+            >
+               
+              AAAAA
+               
+            </div>
+            <div
+              className="small-color"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "AAAAA",
+                }
+              }
+            >
+               
+              AAAAA
+               
+            </div>
+            <div
+              className="small-color"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "AAAAA",
+                }
+              }
+            >
+               
+              AAAAA
+               
+            </div>
+            <div
+              className="small-color"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "AAAAA",
+                }
+              }
+            >
+               
+              AAAAA
+               
+            </div>
+            <div
+              className="small-color"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "AAAAA",
+                }
+              }
+            >
+               
+              AAAAA
+               
+            </div>
+          </div>,
+          <button
+            onClick={[Function]}
+          >
+            X
+          </button>,
+          <button
+            onClick={[Function]}
+          >
+             Edit
+          </button>,
+        ],
+        "className": "palette",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Cool Palette",
+            "className": "palette-name",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Cool Palette",
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Edit",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Edit",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="small-color"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "AAAAA",
+                  }
+                }
+              >
+                 
+                AAAAA
+                 
+              </div>,
+              <div
+                className="small-color"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "AAAAA",
+                  }
+                }
+              >
+                 
+                AAAAA
+                 
+              </div>,
+              <div
+                className="small-color"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "AAAAA",
+                  }
+                }
+              >
+                 
+                AAAAA
+                 
+              </div>,
+              <div
+                className="small-color"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "AAAAA",
+                  }
+                }
+              >
+                 
+                AAAAA
+                 
+              </div>,
+              <div
+                className="small-color"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "AAAAA",
+                  }
+                }
+              >
+                 
+                AAAAA
+                 
+              </div>,
+            ],
+            "className": "palette-small",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "AAAAA",
+                  " ",
+                ],
+                "className": "small-color",
+                "onClick": [Function],
+                "style": Object {
+                  "backgroundColor": "AAAAA",
+                },
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "AAAAA",
+                " ",
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "AAAAA",
+                  " ",
+                ],
+                "className": "small-color",
+                "onClick": [Function],
+                "style": Object {
+                  "backgroundColor": "AAAAA",
+                },
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "AAAAA",
+                " ",
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "AAAAA",
+                  " ",
+                ],
+                "className": "small-color",
+                "onClick": [Function],
+                "style": Object {
+                  "backgroundColor": "AAAAA",
+                },
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "AAAAA",
+                " ",
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "AAAAA",
+                  " ",
+                ],
+                "className": "small-color",
+                "onClick": [Function],
+                "style": Object {
+                  "backgroundColor": "AAAAA",
+                },
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "AAAAA",
+                " ",
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "4",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "AAAAA",
+                  " ",
+                ],
+                "className": "small-color",
+                "onClick": [Function],
+                "style": Object {
+                  "backgroundColor": "AAAAA",
+                },
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "AAAAA",
+                " ",
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "X",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "X",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": " Edit",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": " Edit",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

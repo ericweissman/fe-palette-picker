@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { editPaletteSuccess } from '../../actions';
 import { handlePalette } from '../../thunks/handlePalette';
+import PropTypes from 'prop-types'
 
-class Palette extends Component {
+export class Palette extends Component {
   state = {
     edited: false,
     name: '',
@@ -51,7 +52,7 @@ class Palette extends Component {
         {
           edited ?
             <input onChange={this.updateName} value={this.state.name}></input> :
-            <h5 onClick={() => setActive(colors)}>{palette.palette_name}</h5>
+            <h5 className='palette-name' onClick={() => setActive(colors)}>{palette.palette_name}</h5>
         }
         <button onClick={this.toggleEdited}>{edited ? 'Save' : 'Edit'}</button>
         <div className='palette-small'>
@@ -75,3 +76,11 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 export default connect(null, mapDispatchToProps)(Palette);
+
+Palette.propTypes = {
+  palette: PropTypes.object,
+  setActive: PropTypes.func,
+  deletePalette: PropTypes.func,
+  editPalette: PropTypes.func,
+  editName: PropTypes.func,
+}
