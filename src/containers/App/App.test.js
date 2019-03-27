@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom';
 import {App, mapDispatchToProps } from './App';
-import { shallow, mount } from 'enzyme'
+import { shallow } from 'enzyme'
 import { handleProject } from '../../thunks/handleProject'
 import { mapStateToProps } from './App';
 import { getProjectsSuccess } from '../../actions'
@@ -52,7 +51,7 @@ describe('App', () => {
       const mappedProps = mapDispatchToProps(mockDispatch)
       const actionToDispatch = handleProject(mockURL, getProjectsSuccess, 'GET')
 
-      mappedProps.handleProject(mockURL)
+      mappedProps.handleProject(mockURL, getProjectsSuccess, 'GET')
       expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch)
     })
   })
