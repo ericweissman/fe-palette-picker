@@ -43,7 +43,7 @@ export class ProjectCard extends Component {
     const project = { project_name: projectName }
 
     this.setState({ edited: !this.state.edited })
-    if (this.state.edited) {
+    if (this.state.edited && projectName !== '') {
       this.props.handleProject(url, editProjectSuccess, 'PUT', project)
     }
   }
