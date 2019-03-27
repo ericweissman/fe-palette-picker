@@ -7,6 +7,7 @@ describe('rootReducer', () => {
   it('should set the store with an initial state', () => {
     let expected = {
       activePalette: [],
+      paletteToEdit: {},
       projects: [],
       palettes: [],
       isLoading: true,
