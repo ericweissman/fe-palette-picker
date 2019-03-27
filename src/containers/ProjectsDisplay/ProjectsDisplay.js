@@ -15,6 +15,10 @@ export class ProjectsDisplay extends Component {
             return <ProjectCard key={project.id} project={project} />
           })
         }
+        {
+          projects.length === 0 && 
+          <h5>Oops, no projects to display!</h5>
+        }
       </div>
     )
   }
