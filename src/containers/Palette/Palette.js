@@ -48,24 +48,25 @@ export class Palette extends Component {
     const colors = [palette.color_1, palette.color_2, palette.color_3, palette.color_4, palette.color_5]
     const { edited } = this.state
     return (
-      <div className='palette'>
-        {
-          edited ?
-            <input autoComplete="off" onChange={this.updateName} value={this.state.name}></input> :
-            <h5 className='palette-name' onClick={() => setActive(colors)}>{palette.palette_name}</h5>
-        }
-        <button onClick={this.toggleEdited}>{edited ? 'Save' : 'Edit'}</button>
+        <div className="palette-name-area">
+          {
+            edited ?
+              <input className="edit-palette-name" autoComplete="off" onChange={this.updateName} value={this.state.name}></input> :
+              <h5 className='palette-name' onClick={() => setActive(colors)}>{palette.palette_name}</h5>
+          }
+          <button onClick={this.toggleEdited} className={edited ? 'save-palette-name-btn' : 'edit-palette-name-btn'}></button>
+        </div>
         <div className='palette-small'>
           {
             colors.map((color, i) => {
               return (
-                <div key={i} onClick={() => setActive(colors)} className='small-color' style={{ backgroundColor: color }}> {color} </div>
+                <div key={i} onClick={() => setActive(colors)} className='small-color' style={{ backgroundColor: color }}></div>
               )
             })
           }
+          <button className="edit-palette-btn" onClick={this.editColors}></button>
+          <button className="delete-palette-btn" onClick={() => deletePalette(palette.id)}></button>
         </div >
-        <button onClick={() => deletePalette(palette.id)}>X</button>
-        <button onClick={this.editColors}> Edit</button>
       </div>
     )
   }
