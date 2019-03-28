@@ -11,6 +11,9 @@
 # production
 /build
 
+# github
+GithubImages/
+
 # misc
 .DS_Store
 .env.local
