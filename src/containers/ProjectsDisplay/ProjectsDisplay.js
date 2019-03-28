@@ -17,21 +17,23 @@ export class ProjectsDisplay extends Component {
     };
 
     return (
-      <Masonry
-        breakpointCols={breakpointColumnsObj}
-        className="projects-display-grid"
-        columnClassName="projects-display-grid_column"
-      >
-        {
-          projects && projects.map(project => {
-            return <ProjectCard key={project.id} project={project} />
-          })
-        }
+      <div>
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="projects-display-grid"
+          columnClassName="projects-display-grid_column"
+        >
+          {
+            projects && projects.map(project => {
+              return <ProjectCard key={project.id} project={project} />
+            })
+          }
+        </Masonry>
         {
           projects.length === 0 &&
-          <h5>Oops, no projects to display!</h5>
+          <h5 className="no-projects">Oops, no projects to display!</h5>
         }
-      </Masonry>
+      </div>
     )
   }
 }
