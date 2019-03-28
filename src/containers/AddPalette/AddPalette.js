@@ -51,8 +51,7 @@ export class AddPalette extends Component {
     return (
       <div className="add-palette">
         <div>
-          <h3>Create new palette</h3>
-          <h5>{this.state.errorMessage}</h5>
+          <h3>Save Palette to Project</h3>
         </div>
         <form>
           <input
@@ -66,10 +65,11 @@ export class AddPalette extends Component {
             Save to...
           </button>
           <select name="projectID" onChange={this.handleChange}>
-            <option hidden> select a project </option>
+            <option hidden> Select a Project </option>
             {projects && projectList}
           </select>
         </form>
+        <h5>{this.state.errorMessage}</h5>
       </div>
     )
   }

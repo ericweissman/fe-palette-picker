@@ -1,5 +1,18 @@
 .create-project {
-  border: 2px solid purple;
   margin: 10px;
   padding: 10px;
+  background-color: $secondary-background;
+  h3 {
+    color: $text-accent;
+    text-align: center;
+    margin: 15px;
+    font-size: 26px;
+  }
+  form {
+    text-align: center;
+  }
+  h5 {
+    color: $warning-color;
+    text-transform: uppercase;
+  }
 }

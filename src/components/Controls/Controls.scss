@@ -1,5 +1,22 @@
 .controls {
-  border: 2px dashed red;
-  display: flex;
-  
+  background-color: $secondary-background;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  input {
+    font-size: 20px;
+    overflow-x: hidden;
+    width: 215px;
+    color: $text-accent;
+    background-color: #212121;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 5px;
+    height: 40px;
+    padding-left: 15px;
+  }
+  button {
+    @extend .get-palettes-btn;
+    margin-left: 15px;
+  }
 }

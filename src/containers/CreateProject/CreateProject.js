@@ -33,7 +33,7 @@ export class CreateProject extends Component {
   render() {
     return (
       <div className="create-project">
-        <h3>Create a new project:</h3>
+        <h3>Create a New Project</h3>
         <form>
           <input
             autoComplete="off"
