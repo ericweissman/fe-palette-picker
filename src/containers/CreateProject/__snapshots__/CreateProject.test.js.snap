@@ -22,13 +22,14 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h3>
-          New Project
+          Create a New Project
         </h3>,
         <form>
           <input
+            autoComplete="off"
             name="projectName"
             onChange={[Function]}
-            placeholder="new project name"
+            placeholder="project name"
             value=""
           />
           <button
@@ -36,6 +37,9 @@ ShallowWrapper {
           >
             Save Project
           </button>
+          <h5>
+            
+          </h5>
         </form>,
       ],
       "className": "create-project",
@@ -47,10 +51,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "New Project",
+          "children": "Create a New Project",
         },
         "ref": null,
-        "rendered": "New Project",
+        "rendered": "Create a New Project",
         "type": "h3",
       },
       Object {
@@ -60,9 +64,10 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <input
+              autoComplete="off"
               name="projectName"
               onChange={[Function]}
-              placeholder="new project name"
+              placeholder="project name"
               value=""
             />,
             <button
@@ -70,6 +75,9 @@ ShallowWrapper {
             >
               Save Project
             </button>,
+            <h5>
+              
+            </h5>,
           ],
         },
         "ref": null,
@@ -79,9 +87,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "autoComplete": "off",
               "name": "projectName",
               "onChange": [Function],
-              "placeholder": "new project name",
+              "placeholder": "project name",
               "value": "",
             },
             "ref": null,
@@ -100,6 +109,17 @@ ShallowWrapper {
             "rendered": "Save Project",
             "type": "button",
           },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "",
+            },
+            "ref": null,
+            "rendered": "",
+            "type": "h5",
+          },
         ],
         "type": "form",
       },
@@ -114,13 +134,14 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h3>
-            New Project
+            Create a New Project
           </h3>,
           <form>
             <input
+              autoComplete="off"
               name="projectName"
               onChange={[Function]}
-              placeholder="new project name"
+              placeholder="project name"
               value=""
             />
             <button
@@ -128,6 +149,9 @@ ShallowWrapper {
             >
               Save Project
             </button>
+            <h5>
+              
+            </h5>
           </form>,
         ],
         "className": "create-project",
@@ -139,10 +163,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "New Project",
+            "children": "Create a New Project",
           },
           "ref": null,
-          "rendered": "New Project",
+          "rendered": "Create a New Project",
           "type": "h3",
         },
         Object {
@@ -152,9 +176,10 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <input
+                autoComplete="off"
                 name="projectName"
                 onChange={[Function]}
-                placeholder="new project name"
+                placeholder="project name"
                 value=""
               />,
               <button
@@ -162,6 +187,9 @@ ShallowWrapper {
               >
                 Save Project
               </button>,
+              <h5>
+                
+              </h5>,
             ],
           },
           "ref": null,
@@ -171,9 +199,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
+                "autoComplete": "off",
                 "name": "projectName",
                 "onChange": [Function],
-                "placeholder": "new project name",
+                "placeholder": "project name",
                 "value": "",
               },
               "ref": null,
@@ -191,6 +220,17 @@ ShallowWrapper {
               "ref": null,
               "rendered": "Save Project",
               "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "",
+              },
+              "ref": null,
+              "rendered": "",
+              "type": "h5",
             },
           ],
           "type": "form",

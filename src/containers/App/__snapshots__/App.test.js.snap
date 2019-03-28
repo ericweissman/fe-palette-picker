@@ -43,6 +43,7 @@ ShallowWrapper {
         <Controls />,
         <Connect(ProjectsDisplay) />,
       ],
+      "className": "App",
     },
     "ref": null,
     "rendered": Array [
@@ -87,6 +88,7 @@ ShallowWrapper {
           <Controls />,
           <Connect(ProjectsDisplay) />,
         ],
+        "className": "App",
       },
       "ref": null,
       "rendered": Array [
@@ -200,6 +202,7 @@ ShallowWrapper {
         <Controls />,
         <Connect(ProjectsDisplay) />,
       ],
+      "className": "App",
     },
     "ref": null,
     "rendered": Array [
@@ -244,6 +247,7 @@ ShallowWrapper {
           <Controls />,
           <Connect(ProjectsDisplay) />,
         ],
+        "className": "App",
       },
       "ref": null,
       "rendered": Array [

@@ -19,7 +19,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <h3>
-        loading...
+        Loading...
       </h3>,
       "className": "loading",
     },
@@ -29,10 +29,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "loading...",
+        "children": "Loading...",
       },
       "ref": null,
-      "rendered": "loading...",
+      "rendered": "Loading...",
       "type": "h3",
     },
     "type": "div",
@@ -44,7 +44,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <h3>
-          loading...
+          Loading...
         </h3>,
         "className": "loading",
       },
@@ -54,10 +54,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "loading...",
+          "children": "Loading...",
         },
         "ref": null,
-        "rendered": "loading...",
+        "rendered": "Loading...",
         "type": "h3",
       },
       "type": "div",

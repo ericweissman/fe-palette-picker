@@ -1,6 +1,7 @@
 .loading {
-  position: absolute;
-  top: 20%;
-  left: 45%;
-  display: none;
+  h3 {
+    color: $secondary-background;
+    text-align: center;
+    padding-top: 30px;
+  }
 }
