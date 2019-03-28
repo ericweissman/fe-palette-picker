@@ -17,6 +17,7 @@
   }
   button {
     @extend .get-palettes-btn;
+    background: linear-gradient(to right, #4d5760, #979da0);
     margin-left: 15px;
   }
 }

@@ -1,12 +1,12 @@
 .locked {
   background: url(./images/locked.svg);
   background-size: cover;
-  height: 35px;
-  width: 35px;
+  height: 45px;
+  width: 45px;
   border: none;
   cursor: pointer;
   outline: none;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 .unlocked {
   background: url(./images/unlocked.svg);
@@ -31,7 +31,7 @@
   h4 {
     font-size: 24px;
     font-weight: 400;
-    color: black;
+    color: $main-background;
     text-shadow:
     -.3px -.3px 0 #ffff,
     .3px -.3px 0 #ffff,
@@ -53,5 +53,8 @@
     border-radius: 20px;
     cursor: pointer;
     outline: none;
+    background: linear-gradient(to right, #4d5760, #979da0);
+    border: none;
+    color: $text-accent;
   }
 }
