@@ -27,7 +27,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1>
+        <h1
+          className="title"
+        >
           Palette Picker
         </h1>,
         <div
@@ -64,6 +66,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Palette Picker",
+          "className": "title",
         },
         "ref": null,
         "rendered": "Palette Picker",
@@ -159,7 +162,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
+          <h1
+            className="title"
+          >
             Palette Picker
           </h1>,
           <div
@@ -196,6 +201,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Palette Picker",
+            "className": "title",
           },
           "ref": null,
           "rendered": "Palette Picker",
@@ -348,7 +354,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1>
+        <h1
+          className="title"
+        >
           Palette Picker
         </h1>,
         <div
@@ -405,6 +413,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Palette Picker",
+          "className": "title",
         },
         "ref": null,
         "rendered": "Palette Picker",
@@ -572,7 +581,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
+          <h1
+            className="title"
+          >
             Palette Picker
           </h1>,
           <div
@@ -629,6 +640,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Palette Picker",
+            "className": "title",
           },
           "ref": null,
           "rendered": "Palette Picker",

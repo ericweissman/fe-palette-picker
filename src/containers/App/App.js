@@ -18,17 +18,13 @@ export class App extends Component {
 
   render() {
     const { isLoading } = this.props
-    if (isLoading) {
-      return <Loading />
-    } else {
-      return (
-        <div className="App">
-          <Generator />
-          <Controls />
-          <ProjectsDisplay />
-        </div>
-      );
-    }
+    return (
+      <div className="App">
+        <Generator />
+        <Controls />
+        {isLoading ? <Loading /> : <ProjectsDisplay />}
+      </div>
+    );
   }
 }
 

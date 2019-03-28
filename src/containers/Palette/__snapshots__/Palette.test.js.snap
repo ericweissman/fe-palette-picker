@@ -35,17 +35,20 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h5
-          className="palette-name"
-          onClick={[Function]}
+        <div
+          className="palette-name-area"
         >
-          Cool Palette
-        </h5>,
-        <button
-          onClick={[Function]}
-        >
-          Edit
-        </button>,
+          <h5
+            className="palette-name"
+            onClick={[Function]}
+          >
+            Cool Palette
+          </h5>
+          <button
+            className="edit-palette-name-btn"
+            onClick={[Function]}
+          />
+        </div>,
         <div
           className="palette-small"
         >
@@ -57,11 +60,7 @@ ShallowWrapper {
                 "backgroundColor": "AAAAA",
               }
             }
-          >
-             
-            AAAAA
-             
-          </div>
+          />
           <div
             className="small-color"
             onClick={[Function]}
@@ -70,11 +69,7 @@ ShallowWrapper {
                 "backgroundColor": "AAAAA",
               }
             }
-          >
-             
-            AAAAA
-             
-          </div>
+          />
           <div
             className="small-color"
             onClick={[Function]}
@@ -83,11 +78,7 @@ ShallowWrapper {
                 "backgroundColor": "AAAAA",
               }
             }
-          >
-             
-            AAAAA
-             
-          </div>
+          />
           <div
             className="small-color"
             onClick={[Function]}
@@ -96,11 +87,7 @@ ShallowWrapper {
                 "backgroundColor": "AAAAA",
               }
             }
-          >
-             
-            AAAAA
-             
-          </div>
+          />
           <div
             className="small-color"
             onClick={[Function]}
@@ -109,22 +96,16 @@ ShallowWrapper {
                 "backgroundColor": "AAAAA",
               }
             }
-          >
-             
-            AAAAA
-             
-          </div>
+          />
+          <button
+            className="edit-palette-btn"
+            onClick={[Function]}
+          />
+          <button
+            className="delete-palette-btn"
+            onClick={[Function]}
+          />
         </div>,
-        <button
-          onClick={[Function]}
-        >
-          X
-        </button>,
-        <button
-          onClick={[Function]}
-        >
-           Edit
-        </button>,
       ],
       "className": "palette",
     },
@@ -135,25 +116,49 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Cool Palette",
-          "className": "palette-name",
-          "onClick": [Function],
+          "children": Array [
+            <h5
+              className="palette-name"
+              onClick={[Function]}
+            >
+              Cool Palette
+            </h5>,
+            <button
+              className="edit-palette-name-btn"
+              onClick={[Function]}
+            />,
+          ],
+          "className": "palette-name-area",
         },
         "ref": null,
-        "rendered": "Cool Palette",
-        "type": "h5",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Edit",
-          "onClick": [Function],
-        },
-        "ref": null,
-        "rendered": "Edit",
-        "type": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Cool Palette",
+              "className": "palette-name",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Cool Palette",
+            "type": "h5",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "edit-palette-name-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "button",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -161,71 +166,61 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <div
-              className="small-color"
-              onClick={[Function]}
-              style={
-                Object {
-                  "backgroundColor": "AAAAA",
+            Array [
+              <div
+                className="small-color"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "AAAAA",
+                  }
                 }
-              }
-            >
-               
-              AAAAA
-               
-            </div>,
-            <div
-              className="small-color"
-              onClick={[Function]}
-              style={
-                Object {
-                  "backgroundColor": "AAAAA",
+              />,
+              <div
+                className="small-color"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "AAAAA",
+                  }
                 }
-              }
-            >
-               
-              AAAAA
-               
-            </div>,
-            <div
-              className="small-color"
-              onClick={[Function]}
-              style={
-                Object {
-                  "backgroundColor": "AAAAA",
+              />,
+              <div
+                className="small-color"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "AAAAA",
+                  }
                 }
-              }
-            >
-               
-              AAAAA
-               
-            </div>,
-            <div
-              className="small-color"
-              onClick={[Function]}
-              style={
-                Object {
-                  "backgroundColor": "AAAAA",
+              />,
+              <div
+                className="small-color"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "AAAAA",
+                  }
                 }
-              }
-            >
-               
-              AAAAA
-               
-            </div>,
-            <div
-              className="small-color"
-              onClick={[Function]}
-              style={
-                Object {
-                  "backgroundColor": "AAAAA",
+              />,
+              <div
+                className="small-color"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "AAAAA",
+                  }
                 }
-              }
-            >
-               
-              AAAAA
-               
-            </div>,
+              />,
+            ],
+            <button
+              className="edit-palette-btn"
+              onClick={[Function]}
+            />,
+            <button
+              className="delete-palette-btn"
+              onClick={[Function]}
+            />,
           ],
           "className": "palette-small",
         },
@@ -236,11 +231,6 @@ ShallowWrapper {
             "key": "0",
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                " ",
-                "AAAAA",
-                " ",
-              ],
               "className": "small-color",
               "onClick": [Function],
               "style": Object {
@@ -248,11 +238,7 @@ ShallowWrapper {
               },
             },
             "ref": null,
-            "rendered": Array [
-              " ",
-              "AAAAA",
-              " ",
-            ],
+            "rendered": null,
             "type": "div",
           },
           Object {
@@ -260,11 +246,6 @@ ShallowWrapper {
             "key": "1",
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                " ",
-                "AAAAA",
-                " ",
-              ],
               "className": "small-color",
               "onClick": [Function],
               "style": Object {
@@ -272,11 +253,7 @@ ShallowWrapper {
               },
             },
             "ref": null,
-            "rendered": Array [
-              " ",
-              "AAAAA",
-              " ",
-            ],
+            "rendered": null,
             "type": "div",
           },
           Object {
@@ -284,11 +261,6 @@ ShallowWrapper {
             "key": "2",
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                " ",
-                "AAAAA",
-                " ",
-              ],
               "className": "small-color",
               "onClick": [Function],
               "style": Object {
@@ -296,11 +268,7 @@ ShallowWrapper {
               },
             },
             "ref": null,
-            "rendered": Array [
-              " ",
-              "AAAAA",
-              " ",
-            ],
+            "rendered": null,
             "type": "div",
           },
           Object {
@@ -308,11 +276,6 @@ ShallowWrapper {
             "key": "3",
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                " ",
-                "AAAAA",
-                " ",
-              ],
               "className": "small-color",
               "onClick": [Function],
               "style": Object {
@@ -320,11 +283,7 @@ ShallowWrapper {
               },
             },
             "ref": null,
-            "rendered": Array [
-              " ",
-              "AAAAA",
-              " ",
-            ],
+            "rendered": null,
             "type": "div",
           },
           Object {
@@ -332,11 +291,6 @@ ShallowWrapper {
             "key": "4",
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                " ",
-                "AAAAA",
-                " ",
-              ],
               "className": "small-color",
               "onClick": [Function],
               "style": Object {
@@ -344,39 +298,35 @@ ShallowWrapper {
               },
             },
             "ref": null,
-            "rendered": Array [
-              " ",
-              "AAAAA",
-              " ",
-            ],
+            "rendered": null,
             "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "edit-palette-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "delete-palette-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "button",
           },
         ],
         "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "X",
-          "onClick": [Function],
-        },
-        "ref": null,
-        "rendered": "X",
-        "type": "button",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": " Edit",
-          "onClick": [Function],
-        },
-        "ref": null,
-        "rendered": " Edit",
-        "type": "button",
       },
     ],
     "type": "div",
@@ -388,17 +338,20 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h5
-            className="palette-name"
-            onClick={[Function]}
+          <div
+            className="palette-name-area"
           >
-            Cool Palette
-          </h5>,
-          <button
-            onClick={[Function]}
-          >
-            Edit
-          </button>,
+            <h5
+              className="palette-name"
+              onClick={[Function]}
+            >
+              Cool Palette
+            </h5>
+            <button
+              className="edit-palette-name-btn"
+              onClick={[Function]}
+            />
+          </div>,
           <div
             className="palette-small"
           >
@@ -410,11 +363,7 @@ ShallowWrapper {
                   "backgroundColor": "AAAAA",
                 }
               }
-            >
-               
-              AAAAA
-               
-            </div>
+            />
             <div
               className="small-color"
               onClick={[Function]}
@@ -423,11 +372,7 @@ ShallowWrapper {
                   "backgroundColor": "AAAAA",
                 }
               }
-            >
-               
-              AAAAA
-               
-            </div>
+            />
             <div
               className="small-color"
               onClick={[Function]}
@@ -436,11 +381,7 @@ ShallowWrapper {
                   "backgroundColor": "AAAAA",
                 }
               }
-            >
-               
-              AAAAA
-               
-            </div>
+            />
             <div
               className="small-color"
               onClick={[Function]}
@@ -449,11 +390,7 @@ ShallowWrapper {
                   "backgroundColor": "AAAAA",
                 }
               }
-            >
-               
-              AAAAA
-               
-            </div>
+            />
             <div
               className="small-color"
               onClick={[Function]}
@@ -462,22 +399,16 @@ ShallowWrapper {
                   "backgroundColor": "AAAAA",
                 }
               }
-            >
-               
-              AAAAA
-               
-            </div>
+            />
+            <button
+              className="edit-palette-btn"
+              onClick={[Function]}
+            />
+            <button
+              className="delete-palette-btn"
+              onClick={[Function]}
+            />
           </div>,
-          <button
-            onClick={[Function]}
-          >
-            X
-          </button>,
-          <button
-            onClick={[Function]}
-          >
-             Edit
-          </button>,
         ],
         "className": "palette",
       },
@@ -488,25 +419,49 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Cool Palette",
-            "className": "palette-name",
-            "onClick": [Function],
+            "children": Array [
+              <h5
+                className="palette-name"
+                onClick={[Function]}
+              >
+                Cool Palette
+              </h5>,
+              <button
+                className="edit-palette-name-btn"
+                onClick={[Function]}
+              />,
+            ],
+            "className": "palette-name-area",
           },
           "ref": null,
-          "rendered": "Cool Palette",
-          "type": "h5",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Edit",
-            "onClick": [Function],
-          },
-          "ref": null,
-          "rendered": "Edit",
-          "type": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Cool Palette",
+                "className": "palette-name",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Cool Palette",
+              "type": "h5",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "edit-palette-name-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "button",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
@@ -514,71 +469,61 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <div
-                className="small-color"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "AAAAA",
+              Array [
+                <div
+                  className="small-color"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "AAAAA",
+                    }
                   }
-                }
-              >
-                 
-                AAAAA
-                 
-              </div>,
-              <div
-                className="small-color"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "AAAAA",
+                />,
+                <div
+                  className="small-color"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "AAAAA",
+                    }
                   }
-                }
-              >
-                 
-                AAAAA
-                 
-              </div>,
-              <div
-                className="small-color"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "AAAAA",
+                />,
+                <div
+                  className="small-color"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "AAAAA",
+                    }
                   }
-                }
-              >
-                 
-                AAAAA
-                 
-              </div>,
-              <div
-                className="small-color"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "AAAAA",
+                />,
+                <div
+                  className="small-color"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "AAAAA",
+                    }
                   }
-                }
-              >
-                 
-                AAAAA
-                 
-              </div>,
-              <div
-                className="small-color"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "AAAAA",
+                />,
+                <div
+                  className="small-color"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "AAAAA",
+                    }
                   }
-                }
-              >
-                 
-                AAAAA
-                 
-              </div>,
+                />,
+              ],
+              <button
+                className="edit-palette-btn"
+                onClick={[Function]}
+              />,
+              <button
+                className="delete-palette-btn"
+                onClick={[Function]}
+              />,
             ],
             "className": "palette-small",
           },
@@ -589,11 +534,6 @@ ShallowWrapper {
               "key": "0",
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  " ",
-                  "AAAAA",
-                  " ",
-                ],
                 "className": "small-color",
                 "onClick": [Function],
                 "style": Object {
@@ -601,11 +541,7 @@ ShallowWrapper {
                 },
               },
               "ref": null,
-              "rendered": Array [
-                " ",
-                "AAAAA",
-                " ",
-              ],
+              "rendered": null,
               "type": "div",
             },
             Object {
@@ -613,11 +549,6 @@ ShallowWrapper {
               "key": "1",
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  " ",
-                  "AAAAA",
-                  " ",
-                ],
                 "className": "small-color",
                 "onClick": [Function],
                 "style": Object {
@@ -625,11 +556,7 @@ ShallowWrapper {
                 },
               },
               "ref": null,
-              "rendered": Array [
-                " ",
-                "AAAAA",
-                " ",
-              ],
+              "rendered": null,
               "type": "div",
             },
             Object {
@@ -637,11 +564,6 @@ ShallowWrapper {
               "key": "2",
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  " ",
-                  "AAAAA",
-                  " ",
-                ],
                 "className": "small-color",
                 "onClick": [Function],
                 "style": Object {
@@ -649,11 +571,7 @@ ShallowWrapper {
                 },
               },
               "ref": null,
-              "rendered": Array [
-                " ",
-                "AAAAA",
-                " ",
-              ],
+              "rendered": null,
               "type": "div",
             },
             Object {
@@ -661,11 +579,6 @@ ShallowWrapper {
               "key": "3",
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  " ",
-                  "AAAAA",
-                  " ",
-                ],
                 "className": "small-color",
                 "onClick": [Function],
                 "style": Object {
@@ -673,11 +586,7 @@ ShallowWrapper {
                 },
               },
               "ref": null,
-              "rendered": Array [
-                " ",
-                "AAAAA",
-                " ",
-              ],
+              "rendered": null,
               "type": "div",
             },
             Object {
@@ -685,11 +594,6 @@ ShallowWrapper {
               "key": "4",
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  " ",
-                  "AAAAA",
-                  " ",
-                ],
                 "className": "small-color",
                 "onClick": [Function],
                 "style": Object {
@@ -697,39 +601,35 @@ ShallowWrapper {
                 },
               },
               "ref": null,
-              "rendered": Array [
-                " ",
-                "AAAAA",
-                " ",
-              ],
+              "rendered": null,
               "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "edit-palette-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "delete-palette-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "button",
             },
           ],
           "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "X",
-            "onClick": [Function],
-          },
-          "ref": null,
-          "rendered": "X",
-          "type": "button",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": " Edit",
-            "onClick": [Function],
-          },
-          "ref": null,
-          "rendered": " Edit",
-          "type": "button",
         },
       ],
       "type": "div",
@@ -797,17 +697,20 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h5
-          className="palette-name"
-          onClick={[Function]}
+        <div
+          className="palette-name-area"
         >
-          Cool Palette
-        </h5>,
-        <button
-          onClick={[Function]}
-        >
-          Edit
-        </button>,
+          <h5
+            className="palette-name"
+            onClick={[Function]}
+          >
+            Cool Palette
+          </h5>
+          <button
+            className="edit-palette-name-btn"
+            onClick={[Function]}
+          />
+        </div>,
         <div
           className="palette-small"
         >
@@ -819,11 +722,7 @@ ShallowWrapper {
                 "backgroundColor": "AAAAA",
               }
             }
-          >
-             
-            AAAAA
-             
-          </div>
+          />
           <div
             className="small-color"
             onClick={[Function]}
@@ -832,11 +731,7 @@ ShallowWrapper {
                 "backgroundColor": "AAAAA",
               }
             }
-          >
-             
-            AAAAA
-             
-          </div>
+          />
           <div
             className="small-color"
             onClick={[Function]}
@@ -845,11 +740,7 @@ ShallowWrapper {
                 "backgroundColor": "AAAAA",
               }
             }
-          >
-             
-            AAAAA
-             
-          </div>
+          />
           <div
             className="small-color"
             onClick={[Function]}
@@ -858,11 +749,7 @@ ShallowWrapper {
                 "backgroundColor": "AAAAA",
               }
             }
-          >
-             
-            AAAAA
-             
-          </div>
+          />
           <div
             className="small-color"
             onClick={[Function]}
@@ -871,22 +758,16 @@ ShallowWrapper {
                 "backgroundColor": "AAAAA",
               }
             }
-          >
-             
-            AAAAA
-             
-          </div>
+          />
+          <button
+            className="edit-palette-btn"
+            onClick={[Function]}
+          />
+          <button
+            className="delete-palette-btn"
+            onClick={[Function]}
+          />
         </div>,
-        <button
-          onClick={[Function]}
-        >
-          X
-        </button>,
-        <button
-          onClick={[Function]}
-        >
-           Edit
-        </button>,
       ],
       "className": "palette",
     },
@@ -897,25 +778,49 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Cool Palette",
-          "className": "palette-name",
-          "onClick": [Function],
+          "children": Array [
+            <h5
+              className="palette-name"
+              onClick={[Function]}
+            >
+              Cool Palette
+            </h5>,
+            <button
+              className="edit-palette-name-btn"
+              onClick={[Function]}
+            />,
+          ],
+          "className": "palette-name-area",
         },
         "ref": null,
-        "rendered": "Cool Palette",
-        "type": "h5",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Edit",
-          "onClick": [Function],
-        },
-        "ref": null,
-        "rendered": "Edit",
-        "type": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Cool Palette",
+              "className": "palette-name",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Cool Palette",
+            "type": "h5",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "edit-palette-name-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "button",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -923,71 +828,61 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <div
-              className="small-color"
-              onClick={[Function]}
-              style={
-                Object {
-                  "backgroundColor": "AAAAA",
+            Array [
+              <div
+                className="small-color"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "AAAAA",
+                  }
                 }
-              }
-            >
-               
-              AAAAA
-               
-            </div>,
-            <div
-              className="small-color"
-              onClick={[Function]}
-              style={
-                Object {
-                  "backgroundColor": "AAAAA",
+              />,
+              <div
+                className="small-color"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "AAAAA",
+                  }
                 }
-              }
-            >
-               
-              AAAAA
-               
-            </div>,
-            <div
-              className="small-color"
-              onClick={[Function]}
-              style={
-                Object {
-                  "backgroundColor": "AAAAA",
+              />,
+              <div
+                className="small-color"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "AAAAA",
+                  }
                 }
-              }
-            >
-               
-              AAAAA
-               
-            </div>,
-            <div
-              className="small-color"
-              onClick={[Function]}
-              style={
-                Object {
-                  "backgroundColor": "AAAAA",
+              />,
+              <div
+                className="small-color"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "AAAAA",
+                  }
                 }
-              }
-            >
-               
-              AAAAA
-               
-            </div>,
-            <div
-              className="small-color"
-              onClick={[Function]}
-              style={
-                Object {
-                  "backgroundColor": "AAAAA",
+              />,
+              <div
+                className="small-color"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "AAAAA",
+                  }
                 }
-              }
-            >
-               
-              AAAAA
-               
-            </div>,
+              />,
+            ],
+            <button
+              className="edit-palette-btn"
+              onClick={[Function]}
+            />,
+            <button
+              className="delete-palette-btn"
+              onClick={[Function]}
+            />,
           ],
           "className": "palette-small",
         },
@@ -998,11 +893,6 @@ ShallowWrapper {
             "key": "0",
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                " ",
-                "AAAAA",
-                " ",
-              ],
               "className": "small-color",
               "onClick": [Function],
               "style": Object {
@@ -1010,11 +900,7 @@ ShallowWrapper {
               },
             },
             "ref": null,
-            "rendered": Array [
-              " ",
-              "AAAAA",
-              " ",
-            ],
+            "rendered": null,
             "type": "div",
           },
           Object {
@@ -1022,11 +908,6 @@ ShallowWrapper {
             "key": "1",
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                " ",
-                "AAAAA",
-                " ",
-              ],
               "className": "small-color",
               "onClick": [Function],
               "style": Object {
@@ -1034,11 +915,7 @@ ShallowWrapper {
               },
             },
             "ref": null,
-            "rendered": Array [
-              " ",
-              "AAAAA",
-              " ",
-            ],
+            "rendered": null,
             "type": "div",
           },
           Object {
@@ -1046,11 +923,6 @@ ShallowWrapper {
             "key": "2",
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                " ",
-                "AAAAA",
-                " ",
-              ],
               "className": "small-color",
               "onClick": [Function],
               "style": Object {
@@ -1058,11 +930,7 @@ ShallowWrapper {
               },
             },
             "ref": null,
-            "rendered": Array [
-              " ",
-              "AAAAA",
-              " ",
-            ],
+            "rendered": null,
             "type": "div",
           },
           Object {
@@ -1070,11 +938,6 @@ ShallowWrapper {
             "key": "3",
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                " ",
-                "AAAAA",
-                " ",
-              ],
               "className": "small-color",
               "onClick": [Function],
               "style": Object {
@@ -1082,11 +945,7 @@ ShallowWrapper {
               },
             },
             "ref": null,
-            "rendered": Array [
-              " ",
-              "AAAAA",
-              " ",
-            ],
+            "rendered": null,
             "type": "div",
           },
           Object {
@@ -1094,11 +953,6 @@ ShallowWrapper {
             "key": "4",
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                " ",
-                "AAAAA",
-                " ",
-              ],
               "className": "small-color",
               "onClick": [Function],
               "style": Object {
@@ -1106,39 +960,35 @@ ShallowWrapper {
               },
             },
             "ref": null,
-            "rendered": Array [
-              " ",
-              "AAAAA",
-              " ",
-            ],
+            "rendered": null,
             "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "edit-palette-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "delete-palette-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "button",
           },
         ],
         "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "X",
-          "onClick": [Function],
-        },
-        "ref": null,
-        "rendered": "X",
-        "type": "button",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": " Edit",
-          "onClick": [Function],
-        },
-        "ref": null,
-        "rendered": " Edit",
-        "type": "button",
       },
     ],
     "type": "div",
@@ -1150,17 +1000,20 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h5
-            className="palette-name"
-            onClick={[Function]}
+          <div
+            className="palette-name-area"
           >
-            Cool Palette
-          </h5>,
-          <button
-            onClick={[Function]}
-          >
-            Edit
-          </button>,
+            <h5
+              className="palette-name"
+              onClick={[Function]}
+            >
+              Cool Palette
+            </h5>
+            <button
+              className="edit-palette-name-btn"
+              onClick={[Function]}
+            />
+          </div>,
           <div
             className="palette-small"
           >
@@ -1172,11 +1025,7 @@ ShallowWrapper {
                   "backgroundColor": "AAAAA",
                 }
               }
-            >
-               
-              AAAAA
-               
-            </div>
+            />
             <div
               className="small-color"
               onClick={[Function]}
@@ -1185,11 +1034,7 @@ ShallowWrapper {
                   "backgroundColor": "AAAAA",
                 }
               }
-            >
-               
-              AAAAA
-               
-            </div>
+            />
             <div
               className="small-color"
               onClick={[Function]}
@@ -1198,11 +1043,7 @@ ShallowWrapper {
                   "backgroundColor": "AAAAA",
                 }
               }
-            >
-               
-              AAAAA
-               
-            </div>
+            />
             <div
               className="small-color"
               onClick={[Function]}
@@ -1211,11 +1052,7 @@ ShallowWrapper {
                   "backgroundColor": "AAAAA",
                 }
               }
-            >
-               
-              AAAAA
-               
-            </div>
+            />
             <div
               className="small-color"
               onClick={[Function]}
@@ -1224,22 +1061,16 @@ ShallowWrapper {
                   "backgroundColor": "AAAAA",
                 }
               }
-            >
-               
-              AAAAA
-               
-            </div>
+            />
+            <button
+              className="edit-palette-btn"
+              onClick={[Function]}
+            />
+            <button
+              className="delete-palette-btn"
+              onClick={[Function]}
+            />
           </div>,
-          <button
-            onClick={[Function]}
-          >
-            X
-          </button>,
-          <button
-            onClick={[Function]}
-          >
-             Edit
-          </button>,
         ],
         "className": "palette",
       },
@@ -1250,25 +1081,49 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Cool Palette",
-            "className": "palette-name",
-            "onClick": [Function],
+            "children": Array [
+              <h5
+                className="palette-name"
+                onClick={[Function]}
+              >
+                Cool Palette
+              </h5>,
+              <button
+                className="edit-palette-name-btn"
+                onClick={[Function]}
+              />,
+            ],
+            "className": "palette-name-area",
           },
           "ref": null,
-          "rendered": "Cool Palette",
-          "type": "h5",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Edit",
-            "onClick": [Function],
-          },
-          "ref": null,
-          "rendered": "Edit",
-          "type": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Cool Palette",
+                "className": "palette-name",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Cool Palette",
+              "type": "h5",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "edit-palette-name-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "button",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
@@ -1276,71 +1131,61 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <div
-                className="small-color"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "AAAAA",
+              Array [
+                <div
+                  className="small-color"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "AAAAA",
+                    }
                   }
-                }
-              >
-                 
-                AAAAA
-                 
-              </div>,
-              <div
-                className="small-color"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "AAAAA",
+                />,
+                <div
+                  className="small-color"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "AAAAA",
+                    }
                   }
-                }
-              >
-                 
-                AAAAA
-                 
-              </div>,
-              <div
-                className="small-color"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "AAAAA",
+                />,
+                <div
+                  className="small-color"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "AAAAA",
+                    }
                   }
-                }
-              >
-                 
-                AAAAA
-                 
-              </div>,
-              <div
-                className="small-color"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "AAAAA",
+                />,
+                <div
+                  className="small-color"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "AAAAA",
+                    }
                   }
-                }
-              >
-                 
-                AAAAA
-                 
-              </div>,
-              <div
-                className="small-color"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "AAAAA",
+                />,
+                <div
+                  className="small-color"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "AAAAA",
+                    }
                   }
-                }
-              >
-                 
-                AAAAA
-                 
-              </div>,
+                />,
+              ],
+              <button
+                className="edit-palette-btn"
+                onClick={[Function]}
+              />,
+              <button
+                className="delete-palette-btn"
+                onClick={[Function]}
+              />,
             ],
             "className": "palette-small",
           },
@@ -1351,11 +1196,6 @@ ShallowWrapper {
               "key": "0",
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  " ",
-                  "AAAAA",
-                  " ",
-                ],
                 "className": "small-color",
                 "onClick": [Function],
                 "style": Object {
@@ -1363,11 +1203,7 @@ ShallowWrapper {
                 },
               },
               "ref": null,
-              "rendered": Array [
-                " ",
-                "AAAAA",
-                " ",
-              ],
+              "rendered": null,
               "type": "div",
             },
             Object {
@@ -1375,11 +1211,6 @@ ShallowWrapper {
               "key": "1",
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  " ",
-                  "AAAAA",
-                  " ",
-                ],
                 "className": "small-color",
                 "onClick": [Function],
                 "style": Object {
@@ -1387,11 +1218,7 @@ ShallowWrapper {
                 },
               },
               "ref": null,
-              "rendered": Array [
-                " ",
-                "AAAAA",
-                " ",
-              ],
+              "rendered": null,
               "type": "div",
             },
             Object {
@@ -1399,11 +1226,6 @@ ShallowWrapper {
               "key": "2",
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  " ",
-                  "AAAAA",
-                  " ",
-                ],
                 "className": "small-color",
                 "onClick": [Function],
                 "style": Object {
@@ -1411,11 +1233,7 @@ ShallowWrapper {
                 },
               },
               "ref": null,
-              "rendered": Array [
-                " ",
-                "AAAAA",
-                " ",
-              ],
+              "rendered": null,
               "type": "div",
             },
             Object {
@@ -1423,11 +1241,6 @@ ShallowWrapper {
               "key": "3",
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  " ",
-                  "AAAAA",
-                  " ",
-                ],
                 "className": "small-color",
                 "onClick": [Function],
                 "style": Object {
@@ -1435,11 +1248,7 @@ ShallowWrapper {
                 },
               },
               "ref": null,
-              "rendered": Array [
-                " ",
-                "AAAAA",
-                " ",
-              ],
+              "rendered": null,
               "type": "div",
             },
             Object {
@@ -1447,11 +1256,6 @@ ShallowWrapper {
               "key": "4",
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  " ",
-                  "AAAAA",
-                  " ",
-                ],
                 "className": "small-color",
                 "onClick": [Function],
                 "style": Object {
@@ -1459,39 +1263,35 @@ ShallowWrapper {
                 },
               },
               "ref": null,
-              "rendered": Array [
-                " ",
-                "AAAAA",
-                " ",
-              ],
+              "rendered": null,
               "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "edit-palette-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "delete-palette-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "button",
             },
           ],
           "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "X",
-            "onClick": [Function],
-          },
-          "ref": null,
-          "rendered": "X",
-          "type": "button",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": " Edit",
-            "onClick": [Function],
-          },
-          "ref": null,
-          "rendered": " Edit",
-          "type": "button",
         },
       ],
       "type": "div",

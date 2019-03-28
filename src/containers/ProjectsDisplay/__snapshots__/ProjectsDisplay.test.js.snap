@@ -21,11 +21,76 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [],
-      "className": "projects-container",
+      "children": Array [
+        <MasonryComponent
+          breakpointCols={
+            Object {
+              "1100": 3,
+              "500": 1,
+              "700": 2,
+              "default": 4,
+            }
+          }
+          className="projects-display-grid"
+          columnClassName="projects-display-grid_column"
+          disableImagesLoaded={false}
+          elementType="div"
+          enableResizableChildren={false}
+          imagesLoadedOptions={Object {}}
+          onLayoutComplete={[Function]}
+          onRemoveComplete={[Function]}
+          options={Object {}}
+          updateOnEachImageLoad={false}
+        />,
+        <h5
+          className="no-projects"
+        >
+          Oops, no projects to display!
+        </h5>,
+      ],
     },
     "ref": null,
-    "rendered": Array [],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "breakpointCols": Object {
+            "1100": 3,
+            "500": 1,
+            "700": 2,
+            "default": 4,
+          },
+          "children": Array [],
+          "className": "projects-display-grid",
+          "columnClassName": "projects-display-grid_column",
+          "disableImagesLoaded": false,
+          "elementType": "div",
+          "enableResizableChildren": false,
+          "imagesLoadedOptions": Object {},
+          "onLayoutComplete": [Function],
+          "onRemoveComplete": [Function],
+          "options": Object {},
+          "updateOnEachImageLoad": false,
+        },
+        "ref": null,
+        "rendered": Array [],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Oops, no projects to display!",
+          "className": "no-projects",
+        },
+        "ref": null,
+        "rendered": "Oops, no projects to display!",
+        "type": "h5",
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -34,11 +99,76 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [],
-        "className": "projects-container",
+        "children": Array [
+          <MasonryComponent
+            breakpointCols={
+              Object {
+                "1100": 3,
+                "500": 1,
+                "700": 2,
+                "default": 4,
+              }
+            }
+            className="projects-display-grid"
+            columnClassName="projects-display-grid_column"
+            disableImagesLoaded={false}
+            elementType="div"
+            enableResizableChildren={false}
+            imagesLoadedOptions={Object {}}
+            onLayoutComplete={[Function]}
+            onRemoveComplete={[Function]}
+            options={Object {}}
+            updateOnEachImageLoad={false}
+          />,
+          <h5
+            className="no-projects"
+          >
+            Oops, no projects to display!
+          </h5>,
+        ],
       },
       "ref": null,
-      "rendered": Array [],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "breakpointCols": Object {
+              "1100": 3,
+              "500": 1,
+              "700": 2,
+              "default": 4,
+            },
+            "children": Array [],
+            "className": "projects-display-grid",
+            "columnClassName": "projects-display-grid_column",
+            "disableImagesLoaded": false,
+            "elementType": "div",
+            "enableResizableChildren": false,
+            "imagesLoadedOptions": Object {},
+            "onLayoutComplete": [Function],
+            "onRemoveComplete": [Function],
+            "options": Object {},
+            "updateOnEachImageLoad": false,
+          },
+          "ref": null,
+          "rendered": Array [],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Oops, no projects to display!",
+            "className": "no-projects",
+          },
+          "ref": null,
+          "rendered": "Oops, no projects to display!",
+          "type": "h5",
+        },
+      ],
       "type": "div",
     },
   ],
@@ -110,33 +240,92 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Connect(ProjectCard)
-          project={
+        <MasonryComponent
+          breakpointCols={
             Object {
-              "id": 1,
-              "project_name": "first",
+              "1100": 3,
+              "500": 1,
+              "700": 2,
+              "default": 4,
             }
           }
-        />,
+          className="projects-display-grid"
+          columnClassName="projects-display-grid_column"
+          disableImagesLoaded={false}
+          elementType="div"
+          enableResizableChildren={false}
+          imagesLoadedOptions={Object {}}
+          onLayoutComplete={[Function]}
+          onRemoveComplete={[Function]}
+          options={Object {}}
+          updateOnEachImageLoad={false}
+        >
+          <Connect(ProjectCard)
+            project={
+              Object {
+                "id": 1,
+                "project_name": "first",
+              }
+            }
+          />
+        </MasonryComponent>,
+        false,
       ],
-      "className": "projects-container",
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "1",
+        "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "project": Object {
-            "id": 1,
-            "project_name": "first",
+          "breakpointCols": Object {
+            "1100": 3,
+            "500": 1,
+            "700": 2,
+            "default": 4,
           },
+          "children": Array [
+            <Connect(ProjectCard)
+              project={
+                Object {
+                  "id": 1,
+                  "project_name": "first",
+                }
+              }
+            />,
+          ],
+          "className": "projects-display-grid",
+          "columnClassName": "projects-display-grid_column",
+          "disableImagesLoaded": false,
+          "elementType": "div",
+          "enableResizableChildren": false,
+          "imagesLoadedOptions": Object {},
+          "onLayoutComplete": [Function],
+          "onRemoveComplete": [Function],
+          "options": Object {},
+          "updateOnEachImageLoad": false,
         },
         "ref": null,
-        "rendered": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "class",
+            "props": Object {
+              "project": Object {
+                "id": 1,
+                "project_name": "first",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
         "type": [Function],
       },
+      false,
     ],
     "type": "div",
   },
@@ -147,33 +336,92 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Connect(ProjectCard)
-            project={
+          <MasonryComponent
+            breakpointCols={
               Object {
-                "id": 1,
-                "project_name": "first",
+                "1100": 3,
+                "500": 1,
+                "700": 2,
+                "default": 4,
               }
             }
-          />,
+            className="projects-display-grid"
+            columnClassName="projects-display-grid_column"
+            disableImagesLoaded={false}
+            elementType="div"
+            enableResizableChildren={false}
+            imagesLoadedOptions={Object {}}
+            onLayoutComplete={[Function]}
+            onRemoveComplete={[Function]}
+            options={Object {}}
+            updateOnEachImageLoad={false}
+          >
+            <Connect(ProjectCard)
+              project={
+                Object {
+                  "id": 1,
+                  "project_name": "first",
+                }
+              }
+            />
+          </MasonryComponent>,
+          false,
         ],
-        "className": "projects-container",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "1",
+          "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "project": Object {
-              "id": 1,
-              "project_name": "first",
+            "breakpointCols": Object {
+              "1100": 3,
+              "500": 1,
+              "700": 2,
+              "default": 4,
             },
+            "children": Array [
+              <Connect(ProjectCard)
+                project={
+                  Object {
+                    "id": 1,
+                    "project_name": "first",
+                  }
+                }
+              />,
+            ],
+            "className": "projects-display-grid",
+            "columnClassName": "projects-display-grid_column",
+            "disableImagesLoaded": false,
+            "elementType": "div",
+            "enableResizableChildren": false,
+            "imagesLoadedOptions": Object {},
+            "onLayoutComplete": [Function],
+            "onRemoveComplete": [Function],
+            "options": Object {},
+            "updateOnEachImageLoad": false,
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "class",
+              "props": Object {
+                "project": Object {
+                  "id": 1,
+                  "project_name": "first",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
+        false,
       ],
       "type": "div",
     },

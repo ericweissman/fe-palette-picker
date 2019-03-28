@@ -18,23 +18,15 @@ describe('CreateProject', () => {
   })
 
   it('should have the correct default state', () => {
-    const expectedState = { projectName: '' }
+    const expectedState = { projectName: '', message: '' }
     expect(wrapper.state()).toEqual(expectedState)
   })
 
   it('should setState when handleChange is called', () => {
     const mockEvent = { target: { name: 'projectName', value: 'New Project' } }
-    const expectedState = { projectName: 'New Project' }
+    const expectedState = { projectName: 'New Project', message: '' }
     wrapper.instance().handleChange(mockEvent)
     expect(wrapper.state()).toEqual(expectedState)
-  })
-
-  it('should call handleProject when handleSubmit is called', () => {
-    const mockEvent = { preventDefault: jest.fn() }
-    const mockState = { projectName: 'New Project' }
-    const mockURL = 'http://mock.com'
-    wrapper.instance().handleSubmit(mockEvent)
-    expect(mockProps.handleProject).toHaveBeenCalled()
   })
 
   describe('mapDispatchToProps', () => {
