@@ -80,7 +80,7 @@ export class Generator extends Component {
     const { activePalette } = this.props
     return (
       <div className='generator'>
-        <h1>Palette Picker</h1>
+        <h1 className="title">Palette Picker</h1>
         <div className='palette-main'>
           {
             activePalette.map((palette, i) => {

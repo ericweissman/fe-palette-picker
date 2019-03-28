@@ -1,10 +1,4 @@
 .generator {
-  h1 {
-    font-family: $title-font;
-    font-size: 2.75rem;
-    text-align: center;
-    margin: 10px;
-  }
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,4 +6,34 @@
 
 .palette-main {
   display: flex;
+  box-shadow: 7px 7px 7px -1px rgb(45, 45, 45);
+}
+
+.title {
+  font-family: $title-font;
+  font-size: 4.25rem;
+  text-align: center;
+  margin: 25px;
+  transition: color 1s ease-in-out;
+  animation: 
+    animationFrames ease-in 15s,
+    pulse 5s infinite; 
+  animation-iteration-count: infinite;
+  &:hover {
+    color: #53a7ea;
+  }
+}
+
+@keyframes animationFrames {
+  0%   { color:#F44336 }
+  10%  { color:#E91E63 }
+  20%  { color:#9C27B0 }
+  30%  { color:#3F51B5 }
+  40%  { color:#607D8B }
+  50%  { color:#00BCD4 }
+  60%  { color:#4CAF50 }
+  70%  { color:#CDDC39 }
+  80%  { color:#FFC107 }
+  90%  { color:#FF5722 }
+  100% { color:#F44336 }
 }
