@@ -2,17 +2,12 @@
 
 #### Palette Picker is a React app that utilizes Redux to create intuitively generated palettes that you can save to different projects.
 
-## Installation Steps (Back End)
-- Clone down backend repo: ```https://github.com/geet084/be-palette-picker.git```
-- Install dependencies : ```npm install```
-- Start Local Host 3001: ```npm start```
-- For testing suite: ```npm test``` 
-
 ## Installation Steps (Front End)
 - Clone this repo: ```https://github.com/ericweissman/fe-palette-picker.git```
 - Install dependencies: ```npm install```
 - Start Local Host 3000: ```npm start```
 - For testing suite: ```npm test```
+- Back-End Repo: ```https://github.com/geet084/be-palette-picker.git```
 
 ## Deployed Site
 [Palette Picker](https://palette-picker-1810.herokuapp.com/)
